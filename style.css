@@ -1,0 +1,211 @@
+html,
+body {
+    margin: 0;/*画面端まで黒くなる*/
+    padding: 0;
+}
+
+.main {
+    font-size: 0.8rem;
+    /*width: 100vw;
+    height: 100vh;*/
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    position: fixed; /* 画面上に固定 */
+    top: 0;/* 上部に固定 */
+    left: 0;
+    display: flex;/* 横並びにする */
+    width: 100%;/* 幅を画面全体に広げる */
+    background-color: #1f1f1f;/* ナビゲーションバーの背景色 */
+    z-index: 1000;/* 他の要素より前面に表示されるようにする */
+    padding: 10px 0;/* 上下の余白を調整 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* 下に影を付けて浮いているように見せる */
+}
+
+.logo_yoko {
+    height: 30px;
+    margin-left : 10px;
+    margin-right: 50%;
+    /* ロゴの高さを調整 */
+}
+
+.nav-links ul {
+    display: flex;/* 横並びにする */
+    list-style: none; /* リストのドットを消す */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+    /* リスト項目の間隔を調整 */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    /* アンダーラインを消す */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* ------------------------------------ヘッダー------------------------------------------*/
+
+.sumida_pic {
+    position: absolute;
+    filter: brightness(0.8);
+}
+.kaisai_information{
+    display: flex;
+    position: relative;
+}
+.logo_tate {
+    padding: 150px 30px 150px 160px;
+}
+
+.contents1 {
+    font-family: "DNP ShueiYMinStd";
+    line-height: normal;
+}
+
+.event-title {
+    padding-top: 400px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+}
+.image_nichiji{
+    display:flex;
+}
+.venue-name {
+    margin-top: -8px;
+    padding-left: 20px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.96px;
+}
+
+.venue-address {
+    color: var(--gray, #BABABA);
+    margin-top: -40px;
+    padding-left: 230px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.56px;
+}
+
+/* ------------------------------------開催情報------------------------------------------*/
+
+.kaisai_detail {
+    position: relative;  /* 子要素の絶対位置を基準にする */
+}
+
+.map_back {
+    position: relative; /* 親要素内に配置 */
+    padding-left: 16px;
+}
+
+.contents4 {
+    position: absolute;
+    /* 画像の上に重ねるために絶対配置 */
+    top: 0;
+    /* 必要に応じて位置を調整 */
+    left: 100;
+    padding: 7%;
+}
+
+.more_detail {
+    font-family: "Futura PT";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+.more_detail_jp {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.venue-address1 {
+    font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+/*.map {
+    margin-top: -290px;
+    padding-left: 700px;
+}*/
+#googlemapbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;  /* 正方形のサイズ */
+    height: 380px; /* 正方形のサイズ */
+    border-radius: 40px; /* 角にアールをつける */
+    overflow: hidden; /* 角の外に出る部分を隠す */
+    transform: translate(800px, -290px);
+  }
+  
+  #googlemap {
+    width: 100%;
+    height: 100%;
+    border: none; /* 枠線を消す */
+  }
+  
+
+/* ------------------------------------開催概要・地図------------------------------------------*/
+
+.godo_exhibition{
+    padding: 20%;
+}
+.exhibition_title {
+    /*padding-top: 30%;*/
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.venue_address2 {
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+/* ------------------------------------合同卒展------------------------------------------*/
+
+.sponsor{
+    background-color: #ffffff;
+    margin-top: 144px;
+}
+.contents6{
+    text-align: center;
+    background-color: #ffffff;
+    color :black;
+    padding: 20%
+}
+.sponsor_title {
+    margin:-20%;
+    font-size: 20px;
+}
+
+/* ------------------------------------協賛企業------------------------------------------*/
