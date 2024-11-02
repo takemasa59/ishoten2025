@@ -132,7 +132,7 @@ background: var(--black, #101010);
 }
 
 .more_detail {
-    font-family:  Avenir;
+    font-family:  "futura-pt", sans-serif;
     font-size: 40px;
     font-weight: 450;
     line-height: normal;
@@ -242,7 +242,7 @@ border: 2px solid var(--white, #FFF);
 }
 .sponsor_title {
     padding-top:150px;
-    font-family: "Futura PT";
+    font-family: "futura-pt", sans-serif;
 font-size: 40px;
 font-weight: 450;
 letter-spacing: 1.6px;
