@@ -60,42 +60,50 @@ nav {
     display: flex;
     position: relative;
 }
-.logo_tate {
-    padding: 150px 30px 150px 160px;
-}
 
 .contents1 {
-    font-family: "DNP ShueiYMinStd";
+    font-family: Avenir;
     line-height: normal;
 }
 
 .event-title {
-    padding-top: 400px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.96px;
+    padding-top: 720px;
+    padding-left:80px;
+    font-family: "DNP ShueiYMinStd";
+font-size: 32px;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4.48px;
 }
 .image_nichiji{
+    padding-left:40px;
+    width: 209px;
+height: 83.213px;
+    display:flex;
+}
+.image_loupe{
+    margin-top: -85px;
+    padding-left:337px;
+    width: 32px;
     display:flex;
 }
 .venue-name {
-    margin-top: -8px;
-    padding-left: 20px;
+    margin-top: -32px;
+    padding-left: 377px;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.96px;
+font-weight: 400;
+line-height: 150%; /* 36px */
+letter-spacing: 3.36px;
 }
 
 .venue-address {
     color: var(--gray, #BABABA);
-    margin-top: -40px;
-    padding-left: 230px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.56px;
+    margin-top: -15px;
+    padding-left: 377px;
+    font-size: 16px;
+font-weight: 400;
+line-height: 150%; /* 24px */
+letter-spacing: 2.24px;
 }
 
 /* ------------------------------------開催情報------------------------------------------*/
@@ -106,57 +114,73 @@ nav {
 
 .map_back {
     position: relative; /* 親要素内に配置 */
-    padding-left: 16px;
+    margin-top: 309px;
+    margin-left: 93px;
+    width: 1222px;
+height: 414px;
+border-radius: 40px;
+border: 8px solid #343434;
+background: var(--black, #101010);
 }
 
 .contents4 {
     position: absolute;
     /* 画像の上に重ねるために絶対配置 */
-    top: 0;
+    top: 30px;
     /* 必要に応じて位置を調整 */
-    left: 100;
-    padding: 7%;
+    left: 157px;
 }
 
 .more_detail {
-    font-family: "Futura PT";
+    font-family:  "futura-pt", sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 450;
     line-height: normal;
     letter-spacing: 1.6px;
 }
 
 .more_detail_jp {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.8px;
+    margin-top:-36px;
+    font-family: Avenir;
+    font-size: 24px;
+font-weight: 400;
+line-height: 150%; /* 36px */
+letter-spacing: 3.36px;
+}
+.images{
+    width: 32px;
+    display:flex;
+    flex-direction: column; /* アイテムを縦に並べる */
+  gap: 36px; /* アイテム間の隙間 */
 }
 
-.venue-address1 {
-    font-family: Inter;
+.about_venue{
+    margin-top:-184px;
+    padding-left:44px;
+    font-family: Avenir;
 font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.8px;
+font-weight: 400;
+line-height: 150%; /* 30px */
+letter-spacing: 2.8px;
 }
-/*.map {
-    margin-top: -290px;
-    padding-left: 700px;
-}*/
+
+.venue-address2 {
+    margin-top: 5px;
+}
+
+.venue-access {
+    padding-top: 5px;
+}
+
 #googlemapbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;  /* 正方形のサイズ */
-    height: 380px; /* 正方形のサイズ */
-    border-radius: 40px; /* 角にアールをつける */
+    width: 334px;  /* 正方形のサイズ */
+    height: 334px; /* 正方形のサイズ */
+    border-radius: 32px; /* 角にアールをつける */
     overflow: hidden; /* 角の外に出る部分を隠す */
-    transform: translate(800px, -290px);
+    transform: translate(770px, -315px);
   }
   
   #googlemap {
@@ -169,43 +193,74 @@ letter-spacing: 0.8px;
 /* ------------------------------------開催概要・地図------------------------------------------*/
 
 .godo_exhibition{
-    padding: 20%;
+    font-family: Avenir;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 377px;
 }
 .exhibition_title {
-    /*padding-top: 30%;*/
-    text-align: center;
-    font-family: "Noto Serif JP";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    padding-top: 377px;
+    font-size: 32px;
+font-weight: 900;
+line-height: 150%; /* 48px */
+letter-spacing: 4.48px;
 }
 
-.venue_address2 {
-    text-align: center;
-    font-family: "Noto Serif JP";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.8px;
+.exhibition_explain {
+font-size: 20px;
+font-weight: 400;
+line-height: 150%; /* 30px */
+letter-spacing: 2.8px;
+}
+.button2{
+    display: inline-flex;
+    text-decoration: none;
+    color:#ffffff;
+    font-family: Avenir;
+font-size: 24px;
+font-weight: 900;
+line-height: 150%; 
+letter-spacing: 3.36px;
+padding: 8px 28px;
+border-radius: 32px;
+border: 2px solid var(--white, #FFF);
 }
 
 /* ------------------------------------合同卒展------------------------------------------*/
 
 .sponsor{
     background-color: #ffffff;
-    margin-top: 144px;
+    padding-bottom:300px;
 }
+.tail{
+    width: 100%;
+}
+
 .contents6{
     text-align: center;
-    background-color: #ffffff;
     color :black;
-    padding: 20%
 }
 .sponsor_title {
-    margin:-20%;
-    font-size: 20px;
+    padding-top:150px;
+    font-family: "futura-pt", sans-serif;
+font-size: 40px;
+font-weight: 450;
+letter-spacing: 1.6px;
+}
+.sponsor_title_jp {
+    font-family: Avenir;
+font-size: 24px;
+font-weight: 400;
+line-height: 150%; /* 36px */
+letter-spacing: 3.36px;
+}
+.sponsor_name{
+    color: #757575;
+font-family: Avenir;
+font-size: 20px;
+font-weight: 400;
+line-height: 150%; /* 30px */
+letter-spacing: 2.8px;
 }
 
 /* ------------------------------------協賛企業------------------------------------------*/
