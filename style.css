@@ -322,4 +322,16 @@ letter-spacing: 1.6px;
     font-family: Avenir;
 font-size: 24px;
 font-weight: 400;
-li
+line-height: 150%; /* 36px */
+letter-spacing: 3.36px;
+}
+.sponsor_name{
+    color: #757575;
+font-family: Avenir;
+font-size: 20px;
+font-weight: 400;
+line-height: 150%; /* 30px */
+letter-spacing: 2.8px;
+}
+
+/* ------------------------------------協賛企業------------------------------------------*/

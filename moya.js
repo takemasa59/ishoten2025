@@ -30,4 +30,19 @@
   });*/
 
 window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY * 3; // 現�
+    const scrollY = window.scrollY * 3; // 現在のスクロール量を取得
+    const circle1 = document.querySelector('.moya_pic img'); // 対象要素を取得
+    const circle2 = document.querySelector('.moya_pic2 img');
+    
+    // スクロール量が300px未満なら動作しない
+    if (scrollY < 900) {
+      return;
+    }
+  
+    const newSize = scrollY  - 900 ; // 300pxを引いた値で変化を計算
+  
+    // `clip-path` を設定
+    circle1.style.clipPath = `circle(${1500 + newSize}px at 50% 235%)`; // 中心座標を明示
+    circle2.style.clipPath = `circle(${100 + newSize}px at 30% 90%)`;
+  });
+  
