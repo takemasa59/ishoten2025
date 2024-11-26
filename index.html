@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!--レスポンシブになる-->
-    <title>ishouten2025_teaser</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href="mobile.css" rel="stylesheet" media="(max-width:750px)">
     <link href="style.css" rel="stylesheet" media="(min-width:751px)">
-    <!--link rel="stylesheet" href="style.css" /-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />  <!--Google Fontsにアクセスするための接続を事前に行い、フォントを読み込む際の遅延を減らす-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://use.typekit.net/pmi7iir.css">
@@ -20,6 +18,11 @@
 
 
     />  <!--フォントおよびサイズの指定-->
+    <title>ishouten2025</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	  <link rel="apple-touch-icon" type="image/x-icon" href="images/favicon.ico">
+	  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   
 <!---------------------------------------------------------------------------->
@@ -56,18 +59,27 @@
     <div class="contents1">
       <img class="sumida_pic" src="./images/sumida1.png" alt="画像" >
       <img class="sumida_pic" src="./images/sumida2.png" alt="画像" >
+
+  <div class = "container">
     <picture class="moya_pic">
+      <source srcset="./images/moya2.png" media="(min-width: 769px)"  /> 
+      <source srcset="./images/moya2.png" media="(max-width: 768px)" />
+      <img src="./images/moya2.png" alt="背景画像" >
+     </picture>
+
+     <!--picture class="moya_pic1">
       <source srcset="./images/moya_desktop.png" media="(min-width: 769px)"  /> 
       <source srcset="./images/moya_mobile.png" media="(max-width: 768px)" />
       <img src="./images/moya_desktop.png" alt="背景画像" >
      </picture>
-     <!--div class = "moya_pic_d" >
-      <img src = "./images/moya_desktop.png" class = "moya_pic_d" />
-     </div> 
-     <div class ="moya_pic_m">
-      <img src = "./images/moya_mobile.png" class = "moya_pic_m" />
-    </div-->
-    <!--div class = "black_blank"></div-->
+     
+     <picture class="moya_pic2">
+      <source srcset="./images/moya_desktop.png" media="(min-width: 769px)"  /> 
+      <source srcset="./images/moya_mobile.png" media="(max-width: 768px)" />
+      <img src="./images/moya_desktop.png" alt="背景画像" >
+     </picture-->
+    </div>
+
       <div class="kaisai_information">
         <h1 class="event_title">千葉大学工学部総合工学科デザインコース 卒業研究・制作展</h1>
         <div class = "image_nichiji">
@@ -145,6 +157,7 @@
   </div-->
 
   <script src="slideshow.js"></script>
+  <script src="moya.js"></script>
 
 </body>
 </html>

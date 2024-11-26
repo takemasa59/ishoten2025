@@ -69,11 +69,37 @@ nav {
     object-fit: cover; /* 必要に応じて画像の一部を切り取る */
     object-position: left top; /* 画像を中央寄せ */
 }
+.container{
+    position: relative; 
+    height: 844px;
+}
+
 .moya_pic{
-    filter: brightness(0.8); 
+    position: absolute; 
+    top: 0;
+    left: 0;
     max-width: 100%;
     z-index: -1; 
 }
+
+.moya_pic img{
+    object-fit: cover; 
+    clip-path: circle(2000px at 0% 150%);
+    /*filter: blur(50px);*/
+}
+
+.moya_pic2{
+    position: absolute; 
+    max-width: 100%;
+    z-index: -2; 
+}
+
+.moya_pic2 img{
+    object-fit: cover; 
+    clip-path: circle(2000px at 0% 150%);
+    /*filter: blur(50px);*/
+}
+
 /*.moya_pic_d {
     display: none;
 }
@@ -242,6 +268,8 @@ letter-spacing: 1.28px;
 
 .godo_exhibition{
     padding-top: 330px;
+    padding-bottom: 330px;
+    background-color: #000000;
 }
 .exhibition_title {
     padding-top: 377px;
