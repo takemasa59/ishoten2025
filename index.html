@@ -1,154 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!--レスポンシブになる-->
-    <title>ishouten2025_teaser</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link href="mobile.css" rel="stylesheet" media="(max-width:750px)">
-    <link href="style.css" rel="stylesheet" media="(min-width:751px)">
-    <!--link rel="stylesheet" href="style.css" /-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />  <!--Google Fontsにアクセスするための接続を事前に行い、フォントを読み込む際の遅延を減らす-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://use.typekit.net/pmi7iir.css">
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
-      href="https://use.typekit.net/xxxxxx.css"
-      rel="stylesheet"
-
-
-    />  <!--フォントおよびサイズの指定-->
-  </head>
-  
-<!---------------------------------------------------------------------------->
-<!--こんにちは、マスダからお送り-->
-<!--ブランチtest-->
-<!--こんにちは、motokiからお送り-->
-<!--ブランチtest-->
-
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotLottie Scroll Animation</title>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <style>
+    body {
+      height: 200vh; /* スクロール領域を確保 */
+      margin: 0;
+    }
+    #lottie-container {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
 <body>
-  <div class="main">
-    <nav>
-      <div class="logo_yoko">
-        <img src="./images/logo_yoko.png" class="logo_yoko" />
-      </div>
-      <div class="nav_links">   <!--押したら飛ぶやつ-->
-        <ul>
-          <li><a href="#TOP">TOP</a></li>         <!--上に常にあるやつ-->
-          <li><a href="#">意匠展きてね！</a></li>
-          <li><a href="#">総合プロジェクト</a></li>
-          <li><a href="#">研究室紹介</a></li>
-          <li><a href="#Kaisaigaiyou">開催概要</a></li>
-          <li><a href="#Godosotsuten">合同卒展について</a></li>
-          <div class="SNS">
-            <a href="https://twitter.com/ishoten2024" target="_blank">
-              <img src="images/X_logo.png" class="SNS" alt="X">
-            </a>
-          <a href="https://www.instagram.com/ishoten_2024/" target="_blank">
-              <img src="images/instagram_logo.png" class="SNS" alt="instagram">
-            </a>
-          </div>
-        </ul>
-      </div>     
-    </nav>
-
-  <!-----------------------------------header----------------------------------------->
-     
-  <section id = "" >
-    <div class="contents1">
-      <img class="sumida_pic" src="./images/sumida1.png" alt="画像" >
-      <img class="sumida_pic" src="./images/sumida2.png" alt="画像" >
-    <picture class="moya_pic">
-      <source srcset="./images/moya_desktop.png" media="(min-width: 769px)"  /> 
-      <source srcset="./images/moya_mobile.png" media="(max-width: 768px)" />
-      <img src="./images/moya_desktop.png" alt="背景画像" >
-     </picture>
-     <!--div class = "moya_pic_d" >
-      <img src = "./images/moya_desktop.png" class = "moya_pic_d" />
-     </div> 
-     <div class ="moya_pic_m">
-      <img src = "./images/moya_mobile.png" class = "moya_pic_m" />
-    </div-->
-    <!--div class = "black_blank"></div-->
-      <div class="kaisai_information">
-        <h1 class="event_title">千葉大学工学部総合工学科デザインコース 卒業研究・制作展</h1>
-        <div class = "image_nichiji">
-          <img src = "./images/kaisai_nichiji.svg" class = "image_nichiji" />
-        </div>
-        <div class = "image_loupe"><img src = "./images/loupe.svg" /></div>
-        <h2 class="venue_name">千葉大学墨田サテライトキャンパス</h2>
-        <p class="venue_address">
-          〒131-0044 東京都墨田区文花１丁目１９−１<br>
-          押上駅より徒歩18分 / 曳舟駅より徒歩18分 / 小村井駅より徒歩8分
-        </p>
-      </div>
-      <div class = "black_blank"></div>
-    </div>
-  </section>
-
-  <!------------------------------------kaisai jouhou---------------------------------------->
-
-  <section id = "Kaisaigaiyou">
-    <div class = "contents4">
-      <div class = "map_back">
-      </div>
-      <div class ="kaisai_detail">
-        <h1 class="more_detail">More Detail</h1>
-        <h2 class="more_detail_jp">開催概要</h2>
-        <div class="container" id="googlemapbox">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.636612638256!2d139.82101087571925!3d35.71055897257767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f5cad2ce885%3A0xd22bb354b71b3a80!2sSumida%20Satellite%20Campus%2C%20Chiba%20University!5e0!3m2!1sen!2suk!4v1699029477623!5m2!1sen!2suk" id="googlemap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class = "images">
-          <img src = "./images/today.svg" />
-          <img src = "./images/loupe.svg" />
-          <img src = "./images/train.svg" />
-        </div>
-        <div class ="about_venue">
-        <p class="venue_date">
-          2025/3/7（Fri）~3/9（Sun）　11:00~19:00 </p>
-        <p class="venue_address2">
-          千葉大学墨田サテライトキャンパス<br>
-          〒131-0044 東京都墨田区文花1丁目19-1</p>
-        <p class="venue_access">
-          押上駅より徒歩18分 / 曳舟駅より徒歩18分 / 小村井駅より徒歩8分
-        </p>
-      </div>
-      </div>
-    </div>
-  </section>
-      
- <!--------------------------------------kaisai gaiyou chizu-------------------------------------->
-
-  <section id = "Godosotsuten">
-    <div class = "contents5">
-      <div class ="godo_exhibition">
-        <h1 class="exhibition_title">合同卒展について</h1>
-        <p class="exhibition_explain">
-          「千葉大学4学科合同卒業研究・制作展2025」として、建築学コース・都市環境システムコース・環境造園学<br>
-          プログラムと同日程・同会場で展示会を開催しております。<br>
-          詳細は、下記ボタンをクリック後表示される「合同卒業研究・制作展HP」をご覧ください。
-        </p>
-        <a class="button2" href="https://chiba4sotsuten.studio.site/" target="_blank">合同卒展HPへ</a>
-      </div>
-    </div>
-  </section>
-
-   <!------------------------------------goudo sotsutenn ni tuite---------------------------------------->
-
-  <!--div class = "sponsor">
-  <div class = "tail">
-    <img src = "./images/tail.png"/>
-  </div>   <半円>
-  <div class ="contents6">
-    <h1 class="sponsor_title">sponsor</h1>
-    <h2 class="sponsor_title_jp">協賛企業</h2>
-    <h3 class="sponsor_name">[50音順]</h3>
+  <div id="lottie-container">
+    <dotlottie-player 
+      id="lottie-player"
+      src="https://lottie.host/4cf63447-400b-4d1e-92e5-f334e28d6786/iKRnfc476i.lottie" 
+      background="transparent" 
+      >
+    </dotlottie-player>
   </div>
-  </div-->
 
-  <script src="slideshow.js"></script>
+  <script>
+    // プレイヤーの参照を取得
+    const player = document.getElementById('lottie-player');
 
+    // スクロールイベントでアニメーションを制御
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset; // 現在のスクロール量
+      const documentHeight = document.documentElement.scrollHeight - window.innerHeight; // ドキュメントの高さ
+      const scrollFraction = scrollTop / documentHeight; // スクロール量の割合
+      const frame = Math.min(scrollFraction * 652, 652); // 0〜100%の範囲に正規化
+      player.seek(frame); // フレームを指定してアニメーション位置を更新
+    });
+  </script>
 </body>
 </html>
