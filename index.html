@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />  <!--Google Fontsにアクセスするための接続を事前に行い、フォントを読み込む際の遅延を減らす-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://use.typekit.net/pmi7iir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--　menu_buttonのロゴ-->
     
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
@@ -33,30 +34,42 @@
 <!--ブランチtest-->
 
 <body>
-  <div class="main">
-    <nav>
-      <div class="logo_yoko">
-        <img src="./images/logo_yoko.png" class="logo_yoko" />
-      </div>
-      <div class="nav_links">   <!--押したら飛ぶやつ-->
-        <ul>
-          <li><a href="#TOP">TOP</a></li>         <!--上に常にあるやつ-->
-          <li><a href="#">意匠展きてね！</a></li>
-          <li><a href="#">総合プロジェクト</a></li>
-          <li><a href="#">研究室紹介</a></li>
-          <li><a href="#Kaisaigaiyou">開催概要</a></li>
-          <li><a href="#Godosotsuten">合同卒展について</a></li>
-          <div class="SNS">
-            <a href="https://twitter.com/ishoten2024" target="_blank">
-              <img src="images/X_logo.png" class="SNS" alt="X">
-            </a>
-          <a href="https://www.instagram.com/ishoten_2024/" target="_blank">
-              <img src="images/instagram_logo.png" class="SNS" alt="instagram">
-            </a>
-          </div>
-        </ul>
-      </div>     
+  <header class="header">
+    <div class="header-container">
+      <!-- 丸いボタン -->
+      <button id="actionButton" class="action-button">
+        <i id="buttonIcon" class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- アニメーション用の背景要素 -->
+  <div id="circleEffect" class="circle-effect"></div>
+  
+  <!--　メニューコンテンツ-->
+  <div id="menuContent" class="menu-content">
+    <img src="/images/logo.svg" alt="ロゴ" class="menu-logo">
+    <nav class="menu-items">
+      <a href="#" class="menu-item">研究室紹介</a>
+      <a href="#" class="menu-item">プロジェクト紹介</a>
+      <a href="#" class="menu-item">開催概要</a>
+      <a href="#" class="menu-item">合同卒展について</a>
+      <a href="#" class="menu-item">協賛企業</a>
     </nav>
+    <div class="sns-icons">
+        <a href="https://x.com/ishoten2025" target="_blank" rel="noopener noreferrer">
+          <img src="/images/x.svg" alt="X" class="sns-icon">
+        </a>
+        <a href="https://www.instagram.com/ishoten_2025/" target="_blank" rel="noopener noreferrer">
+          <img src="/images/instagram.svg" alt="Instagram" class="sns-icon">
+        </a>
+      </div>      
+  </div>
+  
+
+  <script src="menu_button.js"></script>
+</body>
+
 
   <!-----------------------------------header----------------------------------------->
      
