@@ -211,6 +211,7 @@ body {
 .kaisai_information {
     position: absolute; /* 必須: z-index を適用するため */
     z-index: 1; /* moya_pic より前に表示されるようにする */
+    color: #FFF;
 }
 
 .contents1 {
@@ -270,6 +271,7 @@ background: var(--black, #000000);
     position: relative;  /* 子要素の絶対位置を基準にする */
     background-color: #000000;
     height: 960px;
+    color: #FFF;
 }
 
 .map_back {
@@ -352,6 +354,7 @@ letter-spacing: 2.8px;
 
 .contents5{
     background-color: #000000;
+    color: #FFF;
     font-family: Avenir;
     align-items: center;
     text-align: center;
