@@ -220,15 +220,15 @@ letter-spacing: 2.24px;
 }
 
 .black_blank{
-    margin-top: 40px;
+    margin-top: -40px;
     width: 100%;
-    height: 310px;
+    height: 700px;
     background: var(--black, #000000);
 }
 
 /* ------------------------------------開催情報------------------------------------------*/
 .contents4 {
-    position: relative;  /* 子要素の絶対位置を基準にする */
+    position: relative; 
     background-color: #000000;
     height: 960px;
     color: #FFF;
@@ -242,12 +242,14 @@ height: 414px;
 border-radius: 40px;
 border: 8px solid #343434;
 background: var(--black, #101010);
+align-items: center;
+transform: translate(0px, 320px);
 }
 
 .kaisai_detail  {
     position: absolute;
     /* 画像の上に重ねるために絶対配置 */
-    top: 25px;
+    top: 335px;
     /* 必要に応じて位置を調整 */
     left: 157px;
 }
