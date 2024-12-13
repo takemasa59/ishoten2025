@@ -242,7 +242,7 @@ letter-spacing: 2.24px;
 .map_back {
     position: relative; /* 親要素内に配置 */
     margin-left: 93px;
-    width: 1222px;
+    width: 85%;
 height: 414px;
 border-radius: 40px;
 border: 8px solid #343434;
