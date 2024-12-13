@@ -9,7 +9,6 @@
     <link href="style.css" rel="stylesheet" media="(min-width:751px)">
     <link rel="preconnect" href="https://fonts.googleapis.com" />  <!--Google Fontsにアクセスするための接続を事前に行い、フォントを読み込む際の遅延を減らす-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://use.typekit.net/pmi7iir.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--　menu_buttonのロゴ-->
     
     <link
@@ -24,6 +23,17 @@
 	  <link rel="apple-touch-icon" type="image/x-icon" href="images/favicon.ico">
 	  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'syt4qro',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   
   </head>
   

@@ -2,61 +2,175 @@ html,
 body {
     margin: 0;/*画面端まで黒くなる*/
     padding: 0;
-    max-width:100%;
+} 
+
+* {
+  /*max-width: 100vw;*/
+  box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
 }
 
-.main {
-    font-size: 0.8rem;
-    /*width: 100vw;
-    height: 100vh;*/
-    /*background: rgb(0, 0, 0);*/
-    background: transparent;
-    color: rgb(255, 255, 255);
-}
-
-nav {
-    position: fixed; /* 画面上に固定 */
-    top: 0;/* 上部に固定 */
-    left: 0;
-    display: flex;/* 横並びにする */
-    width: 100%;/* 幅を画面全体に広げる */
-    /*background-color: #1f1f1f;/* ナビゲーションバーの背景色 */
-    z-index: 1000;/* 他の要素より前面に表示されるようにする */
-    padding: 10px 0;/* 上下の余白を調整 */
-}
-
-.logo_yoko {
-    height: 30px;
-    margin-left : 10px;
-    margin-right: 50%;
-    /* ロゴの高さを調整 */
-}
-
-.nav_links ul {
-    display: flex;/* 横並びにする */
-    list-style: none; /* リストのドットを消す */
-    margin: 0;
-    padding: 0;
-}
-
-.nav_links ul li {
-    margin-right: 20px;
-    /* リスト項目の間隔を調整 */
-}
-
-.nav_links ul li a {
-    text-decoration: none;
-    /* アンダーラインを消す */
-    color: rgb(255, 255, 255);
-    font-family: Avenir;
-    font-weight: 400;
-}
-.SNS{
-    width: 20px;
-    height: 20px;
+  /* スクロール領域を確保 */
+  #scroll-container {
+    height: 400vh; /* スクロール用の高さ */
+    position: relative;
+    top: 0;
+  }
+  
+  /* Lottieアニメーションの配置とスタイル */
+  #lottie-container {
+    position: sticky;
+    top: 0;
     display: flex;
-    gap:20px;
-}
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100vh; /* ビューポートに合わせる */
+    overflow: hidden; /* 余分な部分を非表示に */
+  }
+  
+  dotlottie-player {
+    width: 100vw; /* ビューポート幅に完全フィット */
+    height: auto; /* アスペクト比を維持 */
+  }
+  
+  
+/*------------------------------------アニメーション------------------------------------------*/
+
+/* ヘッダーの基本スタイル */
+.header {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  /* 丸いボタン */
+  .action-button {
+    background-color: #020203;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #0D1269;
+  }
+  
+  /* 円の拡大アニメーション */
+  .circle-effect {
+    position: fixed;
+    width: 0;
+    height: 0;
+    background-color: #0D1269; /* ホバー時の色と一致 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    pointer-events: none;
+    transition: width 0.5s ease-out, height 0.5s ease-out;
+  }
+  
+  .circle-effect.active {
+    width: 4000px; /* 十分大きな値で画面をカバー */
+    height: 4000px;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
+  }
+
+ /* メニュー全体のスタイル */
+.menu-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    opacity: 0;
+    transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
+    z-index: 10;
+  }
+  
+  /* ロゴのスタイル */
+  .menu-logo {
+    width: 56px;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 16px; /* ロゴとメニュー項目の間を24px広げる */
+  }
+  
+  /* メニュー項目のスタイル */
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* gapを20pxに調整 */
+  }
+  
+  .menu-item {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: none;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-bottom: 8px; /* メニュー項目とSNSの間を8px広げる */
+  }
+  
+  /* SNSアイコンのスタイル */
+  .sns-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  
+  .sns-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* リンクのデフォルトスタイルを無効化 */
+.sns-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* 下線を削除 */
+    background: none;
+  }
+  
+  /* 画像そのものに影響しないようにする */
+  .sns-icons a img {
+    width: 32px; /* SNSロゴのサイズ */
+    height: 32px;
+    object-fit: cover; /* 画像が歪まないように */
+  }
+  
+
+  /* ボタンのホバー時の色 */
+  .action-button.active {
+    background-color: #0D1269;
+  }
 
 /* ------------------------------------ヘッダー------------------------------------------*/
 
@@ -132,39 +246,39 @@ line-height: 2;
 letter-spacing: 1.28px;
 }
 .image_nichiji{
-    margin-left: 30px;
-    padding-top: 5px;
+    margin-left: 16%;
+    padding-top: 0px;
     justify-items: center;
+
     width: 118.049px;
     height: 47px;
 }
 .image_loupe{
-    margin-top: 24px;
+    margin-top: 0px;
     margin-left: -280px;
     align-items: baseline;
-    width: 16px;
-    height: 16px;
+    width: 4px;
+    height: 4px;
 
 }
 .venue_name {
-    margin-left: -280px;
-    margin-top: -10px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 250;
-    line-height: 150%; /* 21px */
-    letter-spacing: 1.12px;
+    margin-left: 80px;
+    padding: 33px 5px;
+    color: var(--white, #FFF);
+font-family: "Hiragino Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 250;
+line-height: 150%; /* 21px */
+letter-spacing: 1.12px;
 }
+
 
 .venue_address {
     display: none;
 }
 .black_blank{
-    margin-top:-594px;
-    position: relative; 
-    width: 100%;
-    height: 844px;
-    background: var(--black, #000000);
+    display: none;
 }
 
 /* ------------------------------------開催情報------------------------------------------*/
@@ -177,10 +291,20 @@ letter-spacing: 1.28px;
 
 }
 .map_back {
-    display: none;
+    position: relative; /* 親要素内に配置 */
+    margin-left: 93px;
+    height: 615px;
+    width: 358px;
+    border-radius: 16px;
+    border: 1px solid var(--white, #FFF);
+background: var(--black, #000000);
+align-items: center;
+transform: translate(-75px, 320px);
+
 }
 
 .kaisai_detail {
+  margin-top: -580px;
     position: relative;
     /* 画像の上に重ねるために絶対配置 */
     top: 300px;
@@ -224,8 +348,8 @@ letter-spacing: 1.28px;
     border: none; /* 枠線を消す */
   }
 .images{
-    padding-top: 356px;
-    padding-left: 48px;
+    padding-top: 340px;
+    margin-left: 50px;
     width: 20px;
     height: 20px;
     display:flex;
@@ -234,8 +358,8 @@ letter-spacing: 1.28px;
 }
 
 .about_venue{
-    padding-left:84px;
-    margin-top: -30px;
+    padding-left:90px;
+    margin-top: -15px;
     font-family: Avenir;
     font-size: 12px;
     font-style: normal;
@@ -281,8 +405,9 @@ letter-spacing: 1.28px;
 }
 
 .exhibition_explain {
-    padding: 0px 32px;
-    font-family: "Hiragino Sans";
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Avenir;
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
