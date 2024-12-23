@@ -37,9 +37,32 @@
   
   </head>
   
-<!---------------------------------------------------------------------------->
+<!-------------------------------ローディング--------------------------------------->
 
-<body>
+<div class="loader">
+  <span></span>
+  <h2>loading..</h2>
+</div>
+
+
+<script>
+  window.onload = function () {
+    setTimeout(() => {
+      const loader = document.querySelector(".loader");
+      loader.classList.add("loaded");
+
+      const content = document.querySelector(".content");
+      content.style.visibility = "visible";
+    }, 1300);
+  };
+</script>
+
+<div class="scroll_down">
+  <h2>scroll</h2>
+</div>
+
+<!-------------------------------ヘッダー--------------------------------------->
+
   <header class="header">
     <div class="header-container">
       <!-- 丸いボタン -->
@@ -72,7 +95,7 @@
       </div>      
   </div>
 
-<!-----------------------------------header----------------------------------------->
+<!-----------------------------------opening----------------------------------------->
   <div id="scroll-container">
     <div id="lottie-container">
       <dotlottie-player 
@@ -164,6 +187,7 @@
   <script src="moya.js"></script>
   <script src="script.js"></script>  
   <script src="menu_button.js"></script>
+  <script src="loading.js"></script>
 
 </body>
 </html>
