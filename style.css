@@ -390,6 +390,15 @@ transform: translate(0px, 320px);
     line-height: 150%; /* 36px */
     letter-spacing: 3.36px;
 }
+/* 親コンテナに対する設定 */
+.contents4.container {
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  height: 100vh; /* ビューポート全体の高さ */
+  width: 100vw; /* ビューポート全体の幅 */
+}
+
 #googlemapbox {
     display: flex;
     justify-content: center;
@@ -398,7 +407,7 @@ transform: translate(0px, 320px);
     height: 334px; /* 正方形のサイズ */
     border-radius: 32px; /* 角にアールをつける */
     overflow: hidden; /* 角の外に出る部分を隠す */
-    transform: translate(770px, -125px);
+    transform: translate(225%, -38%);
   }
   
   #googlemap {
@@ -479,10 +488,16 @@ border: 2px solid var(--white, #FFF);
 /* ------------------------------------合同卒展------------------------------------------*/
 
 .sponsor{
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    padding: 0;
 }
 .tail{
     width: 100%;
+}
+.tail img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .contents6{
@@ -512,9 +527,17 @@ line-height: 150%; /* 30px */
 letter-spacing: 2.8px;
 }
 
-.sponsor_logo{
+.sponsor_logo {
   margin-top: -600px;
-  max-width:100vw;
+  max-width: 100vw;
+  z-index: -1;
+  position: relative; /* 必須 */
+}
+
+.sponsor_logo img {
+  margin-top: -100px;
+  max-width: 100vw;
+  position: relative; /* 必須 */
   z-index: -1;
 }
 /* ------------------------------------協賛企業------------------------------------------*/
