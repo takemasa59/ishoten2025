@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100vh; /* ビューポートの高さをカバー */
   overflow: hidden;
-  z-index: 100; /* レイヤーの順序 */
+  z-index: 1000; /* レイヤーの順序 */
 }
 
 /* Lottieプレイヤーのスタイル */
@@ -104,10 +104,7 @@ dotlottie-player {
   }
 }
 
-
  /*スクロール誘導*/
-
-
  .scroll_down {
   position: fixed;
   width: 100%;
@@ -127,7 +124,6 @@ dotlottie-player {
   pointer-events: none; /* ユーザーの操作を無効化 */
 }
 
-
 .scroll_down h2{
   position: fixed;
   color: #000000;
@@ -137,21 +133,21 @@ dotlottie-player {
   font-style: normal;
   font-weight: 450;
   line-height: normal;
-  bottom: 88px;
+  bottom: 128px;
   left: 50%; /* 親要素の幅の50% */
   transform: translate(-50%, -50%);
 }
 
-.scroll_down img {
-  position: fixed; /* fixedを使用して画面全体で配置を制御 */
-  bottom: 0; /* 画面下部に配置 */
-  left: 50%; /* 水平方向の中央揃え */
+.scroll_down h2::after {
+  content: ""; /* 疑似要素の内容は空 */
+  position: absolute; /* h2を基準に配置 */
+  left: 50%; /* h2の中央に配置 */
   transform: translateX(-50%); /* 中央揃え */
+  width: 2px; /* 線の太さ */
+  height: calc(100vh - 50% - 48px); /* 画面の下端までの長さを計算（間隔分を加味） */
+  background-color: #000000; /* 線の色 */
+  top: calc(100% + 24px); /* h2の真下に24px間隔を追加 */
 }
-
-
-
-
 
 /* ヘッダーの基本スタイル */
 .header {
@@ -185,7 +181,7 @@ dotlottie-player {
     outline: none;
     z-index: 10;
     transition: background-color 0.3s ease;
-  }
+  } 
   
   .action-button:hover {
     background-color: #0D1269;
@@ -199,7 +195,7 @@ dotlottie-player {
     background-color: #0D1269; /* ホバー時の色と一致 */
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 300;
     pointer-events: none;
     transition: width 0.5s ease-out, height 0.5s ease-out;
   }
@@ -211,7 +207,6 @@ dotlottie-player {
     /*position: fixed;*/
     transform: translate(-50%, -50%);
     transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
-    
   }
 
  /* メニュー全体のスタイル */
@@ -262,7 +257,6 @@ dotlottie-player {
     align-items: center;
     gap: 48px;
   }
-
   
   .sns-icon {
     width: 32px;
@@ -270,7 +264,7 @@ dotlottie-player {
   }
 
   /* リンクのデフォルトスタイルを無効化 */
-.sns-icons a {
+  .sns-icons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -294,14 +288,14 @@ dotlottie-player {
 
 /* ------------------------------------ヘッダー------------------------------------------*/
 
-.kaisai_information {
+  .kaisai_information {
     position: relative;  /* 子要素の絶対位置を基準にする */
     background-color: #000000;
     height: 400px;
     color: #FFF;
-}
+  }
 
-.event_title {
+  .event_title {
     margin-top :-350px;
     padding-left:15%;
     padding-right: 15%;
@@ -310,39 +304,41 @@ dotlottie-player {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 4.48px;
-}
+  }
 
-.image_nichiji{
+  .image_nichiji{
     padding-left:15%;
     /*width: 209px;
     height: 83.213px;*/
     width: 15vw;
     height: auto;
-}
-.image_loupe{
+  }
+
+  .image_loupe{
     margin-top: -85px;
     padding-left:32%;
     width: 32px;
     display:flex;
-}
-.venue_name {
+  }
+
+  .venue_name {
     margin-top: -32px;
     padding-left: 35%;
     font-size: 24px;
-font-weight: 400;
-line-height: 150%; /* 36px */
-letter-spacing: 3.36px;
-display:flex;
-}
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 3.36px;
+    display:flex;
+  }
 
-.venue_address {
+  .venue_address {
     color: var(--gray, #BABABA);
     margin-top: -15px;
     padding-left: 35%;
     font-size: 16px;
-font-weight: 400;
-line-height: 150%; /* 24px */
-letter-spacing: 2.24px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 2.24px;
 }
 
 .black_blank{
