@@ -11,28 +11,33 @@ body {
 
   /* スクロール領域を確保 */
   #scroll-container {
-    height: 400vh; /* スクロール用の高さ */
+    height: 1100vh; /* スクロール用の高さ */
     position: relative;
     top: 0;
   }
-  
-  /* Lottieアニメーションの配置とスタイル */
-  #lottie-container {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh; /* ビューポートに合わせる */
-    overflow: hidden; /* 余分な部分を非表示に */
-    z-index: 1000px;
-  }
-  
-  dotlottie-player {
-    width: auto; /* ビューポート幅に完全フィット */
-    height: 100vh; /* アスペクト比を維持 */
-  }
+
+/* Lottieアニメーションの配置とスタイル */
+#lottie-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* ビューポートの高さをカバー */
+  overflow: hidden;
+  z-index: 100; /* レイヤーの順序 */
+}
+
+/* Lottieプレイヤーのスタイル */
+dotlottie-player {
+  width: 100vw; /* 横幅を自動調整 */
+  height: auto; /* 高さを自動調整 */
+  transform: translate(-50%, -50%); /* 中心基準で配置 */
+  position: absolute; /* 中心を固定 */
+  top: 50%; /* 縦方向の中央 */
+  left: 50%; /* 横方向の中央 */
+}
   
   
 /* ------------------------------------アニメーション------------------------------------------*/
