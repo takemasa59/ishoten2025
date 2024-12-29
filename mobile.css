@@ -312,6 +312,7 @@ letter-spacing: 1.12px;
 }
 
 .more_detail {
+  margin-top: -30px;
     text-align: center;
     font-family:  "futura-pt", sans-serif;
     font-size: 24px;
@@ -331,6 +332,7 @@ letter-spacing: 1.12px;
     letter-spacing: 1.28px;
 }
 #googlemapbox {
+  position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +340,9 @@ letter-spacing: 1.12px;
     height: 294px; /* 正方形のサイズ */
     border-radius: 32px; /* 角にアールをつける */
     overflow: hidden; /* 角の外に出る部分を隠す */
-    transform: translate(10%, 0%);
+    /*transform: translate(-55%, 40%);*/
+    margin-left: 5vw;
+    top: 130px;
   }
 
   #googlemap {
@@ -347,7 +351,7 @@ letter-spacing: 1.12px;
     border: none; /* 枠線を消す */
   }
 .images{
-    padding-top: 340px;
+    padding-top: 360px;
     margin-left: 50px;
     width: 20px;
     height: 20px;
@@ -378,6 +382,7 @@ letter-spacing: 1.12px;
 .venue_access {
     width: 140px;
     padding-top: 5px;
+    padding-right: 0vw;
 }  
 
 /* ------------------------------------開催概要・地図------------------------------------------*/
@@ -437,7 +442,7 @@ letter-spacing: 1.28px;
 }
 
 .tail img{
-  transform: translate(0px,100px);
+  transform: translate(0px,150px);
   width: 100%;
   height: auto;
   display: block;

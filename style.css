@@ -301,6 +301,7 @@ body {
 .event_title {
     margin-top :-350px;
     padding-left:15%;
+    padding-right: 15%;
     font-family: "DNP ShueiYMinStd";
     font-size: 32px;
     font-weight: 600;
@@ -310,8 +311,10 @@ body {
 
 .image_nichiji{
     padding-left:15%;
-    width: 209px;
-    height: 83.213px;
+    /*width: 209px;
+    height: 83.213px;*/
+    width: 15vw;
+    height: auto;
 }
 .image_loupe{
     margin-top: -85px;
@@ -333,6 +336,7 @@ display:flex;
     color: var(--gray, #BABABA);
     margin-top: -15px;
     padding-left: 35%;
+    padding-right: 5%;
     font-size: 16px;
 font-weight: 400;
 line-height: 150%; /* 24px */
@@ -403,11 +407,13 @@ transform: translate(0px, 320px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 334px;  /* 正方形のサイズ */
+    width: 23vw;  /* 正方形のサイズ */
     height: 334px; /* 正方形のサイズ */
     border-radius: 32px; /* 角にアールをつける */
     overflow: hidden; /* 角の外に出る部分を隠す */
-    transform: translate(225%, -38%);
+    /*transform: translate(225%, -38%);*/
+    margin-top: -130px;
+    margin-left: 55vw;
   }
   
   #googlemap {
@@ -417,7 +423,7 @@ transform: translate(0px, 320px);
   }
 
 .images{
-    margin-top: -310px;
+    margin-top: -210px;
     width: 32px;
     display:flex;
     flex-direction: column; /* アイテムを縦に並べる */
@@ -440,6 +446,7 @@ letter-spacing: 2.8px;
 
 .venue_access {
     padding-top: 5px;
+    padding-right: 25vw;
 }  
 
 /* ------------------------------------開催概要・地図------------------------------------------*/
