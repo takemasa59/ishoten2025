@@ -31,7 +31,7 @@ body {
 
 /* Lottieプレイヤーのスタイル */
 dotlottie-player {
-  width: 150vw; /* 横幅を自動調整 */
+  width: 200vw; /* 横幅を自動調整 */
   height: auto; /* 高さを自動調整 */
   transform: translate(-50%, -50%); /* 中心基準で配置 */
   position: absolute; /* 中心を固定 */
