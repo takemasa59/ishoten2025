@@ -39,10 +39,8 @@ dotlottie-player {
   left: 50%; /* 横方向の中央 */
   z-index: 300;
 }
-  
 
 /* ローディング */
-
 .loader {
   position: fixed;
   width: 100%;
@@ -154,15 +152,7 @@ dotlottie-player {
     position: sticky;
     top: 0;
     z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease;
   }
-
-.header.visible {
-  opacity: 1;
-  visibility: visible;
-}
   
   .header-container {
     position: relative;

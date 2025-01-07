@@ -92,25 +92,6 @@ links.forEach(link => {
   });
 });
 
-// OP中は非表示
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".header");
-  const openingSection = document.getElementById("scroll-container");
-  
-  let hasShownHeader = false;
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const openingHeight = openingSection.offsetHeight;
-    
-    // オープニング終了後にメニューを表示
-    if (scrollTop > openingHeight && !hasShownHeader) {
-      header.classList.add("visible");
-      hasShownHeader = true;
-    }
-  });
-});
-
 
 
 

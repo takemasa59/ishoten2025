@@ -27,11 +27,11 @@
     <script>
       (function(d) {
         var config = {
-          kitId: 'syt4qro',  <!-- TypekitのID -->
+          kitId: 'syt4qro',
           scriptTimeout: 3000,
           async: true
         },
-        h = d.documentElement, t = setTimeout(function() { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function() { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) {} }; s.parentNode.insertBefore(tk, s)
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
       
@@ -76,7 +76,7 @@
   
   <!--　メニューコンテンツ-->
   <div id="menuContent" class="menu-content">
-    <img src="./images/logo.svg" alt="ロゴ" class="menu-logo">
+    <img src="/images/logo.svg" alt="ロゴ" class="menu-logo">
     <nav class="menu-items">
       <a href="#" class="menu-item">研究室紹介</a>
       <a href="#" class="menu-item">プロジェクト紹介</a>
@@ -86,10 +86,10 @@
     </nav>
     <div class="sns-icons">
         <a href="https://x.com/ishoten2025" target="_blank" rel="noopener noreferrer">
-          <img src="./images/x.svg" alt="X" class="sns-icon">
+          <img src="/images/x.svg" alt="X" class="sns-icon">
         </a>
         <a href="https://www.instagram.com/ishoten_2025/" target="_blank" rel="noopener noreferrer">
-          <img src="./images/instagram.svg" alt="Instagram" class="sns-icon">
+          <img src="/images/instagram.svg" alt="Instagram" class="sns-icon">
         </a>
       </div>      
   </div>
@@ -99,7 +99,7 @@
   <div id="lottie-container">
     <dotlottie-player 
       id="lottie-player"
-      src="https://lottie.host/cedb8c8a-17c9-4897-b634-451407f99ff5/QMIqZClOAh.lottie"
+      src="https://lottie.host/a28a14a4-ad00-4f71-b5e8-ab06f93baba0/2IkSPZAqhw.lottie"
       background="transparent">
     </dotlottie-player>
   </div>
@@ -177,7 +177,7 @@
   </div>   <!--半円-->
   <section id = "sponsor">
   <div class ="contents6">
-    <h1 class="sponsor_title">sponsor</h1>
+    <h1 class="sponsor_title">Sponsor</h1>
     <h2 class="sponsor_title_jp">協賛企業</h2>
     <h3 class="sponsor_name">[50音順]</h3>
     <picture class="sponsor_logo">
