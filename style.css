@@ -9,10 +9,9 @@ body {
   box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
 }
 
-
   /* スクロール領域を確保 */
   #scroll-container {
-    height: 1100vh; /* スクロール用の高さ */
+    height: 800vh; /* スクロール用の高さ */
     position: relative;
     top: 0;
   }
@@ -40,6 +39,7 @@ dotlottie-player {
   left: 50%; /* 横方向の中央 */
   z-index: 300;
 }
+
 /* ローディング */
 .loader {
   position: fixed;
