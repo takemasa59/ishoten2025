@@ -9,6 +9,7 @@ body {
   box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
 }
 
+ 
    /* スクロール領域を確保 */
    #scroll-container {
     height: 1100vh; /* スクロール用の高さ */
@@ -27,11 +28,12 @@ body {
   height: 100vh; /* ビューポートの高さをカバー */
   overflow: hidden;
   z-index: 300; /* レイヤーの順序 */
+  background-color: ;
 }
 
 /* Lottieプレイヤーのスタイル */
 dotlottie-player {
-  width: 250vw; /* 横幅を自動調整 */
+  width: 220vw; /* 横幅を自動調整 */
   height: auto; /* 高さを自動調整 */
   transform: translate(-50%, -50%); /* 中心基準で配置 */
   position: absolute; /* 中心を固定 */
