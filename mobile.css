@@ -12,7 +12,7 @@ body {
  
    /* スクロール領域を確保 */
    #scroll-container {
-    height: 1100vh; /* スクロール用の高さ */
+    height: 600vh; /* スクロール用の高さ */
     position: relative;
     top: 0;
   }
