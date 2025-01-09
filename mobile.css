@@ -421,25 +421,28 @@ gap: 32px; /* アイテム間の隙間 */
 
 /* ------------------------------------開催概要・地図------------------------------------------*/
 .contents5{
-    background-color: #000000;
-    font-family: Avenir;
-    align-items: center;
-    text-align: center;
-    height:1024px;
+  background-color: #000000;
+  margin: 0 auto;
+  height: 840px;
+  align-items: center;
+  text-align: center;
 }
 
 .godo_exhibition{
-    padding-top: 330px;
-    padding-bottom: 330px;
-    background-color: #000000;
+  height: auto;
+  width: auto;
+  height: 300px;
 }
+
 .exhibition_title {
-    padding-top: 377px;
-    font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 24px */
-letter-spacing: 1.28px;
+  margin: 0 auto;
+  padding-top: 340px;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 1.28px;
 }
 
 .exhibition_explain {
@@ -452,6 +455,7 @@ letter-spacing: 1.28px;
     line-height: 150%; /* 18px */
     letter-spacing: 0.96px;
 }
+
 .button2{
     display: inline-flex;
     text-decoration: none;
@@ -471,12 +475,15 @@ letter-spacing: 1.28px;
 .sponsor{
     /*background-color: #ffffff;*/
 }
+
 .tail{
     width: 100vw;
+    height: auto;
+    margin: 1000px 0;
+    margin: 0 auto;
 }
 
 .tail img{
-  transform: translate(0px,150px);
   width: 100%;
   height: auto;
   display: block;
