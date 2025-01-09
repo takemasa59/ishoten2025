@@ -497,24 +497,29 @@ gap: 32px; /* アイテム間の隙間 */
 .sponsor_title {
     padding-top:150px;
     font-family: "futura-pt", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 450;
-    letter-spacing: 1.6px;
+    line-height: normal;
+    letter-spacing: 0.96px;
 }
 .sponsor_title_jp {
     font-family: Avenir;
-font-size: 16px;
-font-weight: 400;
-line-height: 150%; /* 36px */
-letter-spacing: 3.36px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+    letter-spacing: 1.28px;
 }
 .sponsor_name{
     color: #757575;
 font-family: Avenir;
 font-size: 12px;
-font-weight: 400;
-line-height: 150%; /* 30px */
-letter-spacing: 2.8px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 18px */
+letter-spacing: 0.96px;
+padding-bottom: 30px;
 }
 
 .sponsor_logo {
@@ -529,4 +534,41 @@ letter-spacing: 2.8px;
   position: relative; /* 必須 */
   /*z-index: -1;*/
 }
-/* ----------------------------
+
+.kojin_sponsor {
+  color :black;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.96px;
+padding-bottom: 80px;
+margin-top: -120px;
+}
+
+.kuroobi{
+  /*margin-top: 0px;*/
+  width: 100%;
+  height: 120px;
+  background: var(--black, #000000);
+  display: flex;
+}
+
+.kuroobi img{
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 15%;
+}
+
+.event_title_tail{
+  color: var(--gray, #BABABA);
+  font-family: "DNP ShueiYMinStd";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-align: left;
+  padding:40px;
+}
