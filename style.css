@@ -152,7 +152,16 @@ dotlottie-player {
     position: sticky;
     top: 0;
     z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
   }
+
+
+.header.visible {
+  opacity: 1;
+  visibility: visible;
+}
   
   .header-container {
     position: relative;
