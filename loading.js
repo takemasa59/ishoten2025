@@ -1,12 +1,25 @@
+window.onload = function () {
+    setTimeout(() => {
+        const loader = document.querySelector(".loader");
+        loader.classList.add("loaded");
+
+        const content = document.querySelector(".content");
+        content.style.visibility = "visible";
+
+        // `.scroll_down` を表示
+        const scrollDown = document.querySelector(".scroll_down");
+        scrollDown.style.opacity = "1";
+        scrollDown.style.visibility = "visible";
+    }, 3000);
+};
+
+// スクロールイベントで `.scroll_down` を隠す
 document.addEventListener("DOMContentLoaded", function () {
     const scrollDownElement = document.querySelector(".scroll_down");
-  
-    // スクロールイベントを監視
+
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 0) {
-        // スクロール開始時にクラスを追加
-        scrollDownElement.classList.add("hidden");
-      }
+        if (window.scrollY > 0) {
+            scrollDownElement.classList.add("hidden");
+        }
     });
-  });
-  
+});

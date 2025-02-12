@@ -15,6 +15,12 @@ body {
     position: relative;
     top: 0;
   }
+  
+  @font-face {
+    font-family: "HueiNijimiShogoMinchoStdHv";
+    src: url("path-to-font-file.woff2") format("woff2"),
+         url("path-to-font-file.woff") format("woff");
+  }
 
 /* Lottieアニメーションの配置とスタイル */
 #lottie-container {
@@ -54,27 +60,35 @@ dotlottie-player {
 
 }
 
+
 .loader span {
   position: flex;
   width: 40px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  border: 6px solid;
+  border-radius: 75%;
+  border: 4px solid;
   border-color: #000 #0000;
   animation: l1 1s infinite;
 }
 
+
 @keyframes l1 {to{transform: rotate(.5turn)}}
 
-.loader h2 {
-  position: flex;
-  color: #000000;
-  text-align: center;
-  font-family: "Futura PT";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
+.scroll_down h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 上端を揃える */
+  gap: 0.5em; /* 行間の調整 */
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を正立 */
+  font-family: "HueiNijimiShogoMinchoStdHv", "Yu Mincho", serif;
+  transform: scaleY(0.97); /* 縦の比率を97%に */
+  line-height: 1; /* 余白を削減 */
+  font-size: 20px;
+}
+
+.scroll_down h2 span {
+  display: block; /* 1つ1つをブロック要素に */
 }
 
 .loaded {
@@ -113,7 +127,9 @@ dotlottie-player {
   opacity: 1; /* 初期状態で表示 */
   transition: opacity 0.5s ease, visibility 0.5s ease; /* フェードアウト時のアニメーション */
   visibility: visible; /* 表示状態 */
+  
 }
+
 
 .scroll_down.hidden {
   opacity: 0; /* 非表示 */
@@ -121,19 +137,6 @@ dotlottie-player {
   pointer-events: none; /* ユーザーの操作を無効化 */
 }
 
-.scroll_down h2{
-  position: fixed;
-  color: #000000;
-  text-align: center;
-  font-family: "Futura PT";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
-  bottom: 128px;
-  left: 50%; /* 親要素の幅の50% */
-  transform: translate(-50%, -50%);
-}
 
 .scroll_down h2::after {
   content: ""; /* 疑似要素の内容は空 */
@@ -143,8 +146,10 @@ dotlottie-player {
   width: 2px; /* 線の太さ */
   height: calc(100vh - 50% - 48px); /* 画面の下端までの長さを計算（間隔分を加味） */
   background-color: #000000; /* 線の色 */
-  top: calc(100% + 24px); /* h2の真下に24px間隔を追加 */
+  top: calc(100% + 88px); /* h2の真下に24px間隔を追加 */
 }
+
+
 
 /* ヘッダーの基本スタイル */
 .header {

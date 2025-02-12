@@ -28,7 +28,6 @@ body {
   height: 100vh; /* ビューポートの高さをカバー */
   overflow: hidden;
   z-index: 300; /* レイヤーの順序 */
-  background-color: ;
 }
 
 /* Lottieプレイヤーのスタイル */
@@ -41,7 +40,28 @@ dotlottie-player {
   left: 50%; /* 横方向の中央 */
   z-index: 300;
 }
+
+/*------------------------------------スクロール------------------------------------------*/
+.scroll_down h2::after {
+  content: ""; /* 疑似要素の内容は空 */
+  position: absolute; /* h2を基準に配置 */
+  left: 50%; /* h2の中央に配置 */
+  transform: translateX(-50%); /* 中央揃え */
+  width: 1px; /* 線の太さ */
+  height: calc(100vh - 50% - 64px); /* 画面の下端までの長さを計算（間隔分を加味） */
+  background-color: #000000; /* 線の色 */
+  top: calc(100% + 24px); /* h2の真下に24px間隔を追加 */
+}
+
+
+.scroll_down h2{
+  font-size: 14px;
+}
   
+.scroll_down h2::after {
+  top: calc(100% + 88px); /* h2の真下に24px間隔を追加 */
+}
+
   
 /*------------------------------------アニメーション------------------------------------------*/
 
@@ -50,7 +70,7 @@ dotlottie-player {
     height: 50px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1300;
   }
   
   .header-container {
@@ -81,6 +101,7 @@ dotlottie-player {
   
   .action-button:hover {
     background-color: #0D1269;
+
   }
   
   /* 円の拡大アニメーション */
@@ -94,6 +115,7 @@ dotlottie-player {
     z-index: 5;
     pointer-events: none;
     transition: width 0.5s ease-out, height 0.5s ease-out;
+    z-index: 1299;
   }
   
   .circle-effect.active {
@@ -102,6 +124,7 @@ dotlottie-player {
     opacity: 1;
     transform: translate(-50%, -50%);
     transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
+    z-index: 1299;
   }
 
  /* メニュー全体のスタイル */
@@ -117,15 +140,15 @@ dotlottie-player {
     gap: 40px;
     opacity: 0;
     transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
-    z-index: 10;
+    z-index: 1300;
   }
   
   /* ロゴのスタイル */
   .menu-logo {
-    width: 56px;
+    width: 40px;
     height: auto;
     flex-shrink: 0;
-    margin-bottom: 16px; /* ロゴとメニュー項目の間を24px広げる */
+    margin-bottom: 8px; /* ロゴとメニュー項目の間を24px広げる */
   }
   
   /* メニュー項目のスタイル */
@@ -133,12 +156,12 @@ dotlottie-player {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px; /* gapを20pxに調整 */
+    gap: 8px; /* gapを8pxに調整 */
   }
   
   .menu-item {
     font-family: 'Noto Serif JP', serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #ffffff;
     background: none;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -150,15 +173,10 @@ dotlottie-player {
   .sns-icons {
     display: inline-flex;
     align-items: center;
-    gap: 48px;
+    gap: 32px;
   }
 
   
-  .sns-icon {
-    width: 32px;
-    height: 32px;
-  }
-
   /* リンクのデフォルトスタイルを無効化 */
 .sns-icons a {
     display: inline-flex;
@@ -170,8 +188,8 @@ dotlottie-player {
   
   /* 画像そのものに影響しないようにする */
   .sns-icons a img {
-    width: 32px; /* SNSロゴのサイズ */
-    height: 32px;
+    width: 24px; /* SNSロゴのサイズ */
+    height: 24px;
     object-fit: cover; /* 画像が歪まないように */
   }
   
@@ -183,45 +201,6 @@ dotlottie-player {
 
 /* ------------------------------------ヘッダー------------------------------------------*/
 
-.sumida_pic {
-    position: fixed;
-    z-index: -10;
-    max-height : 100vh;
-    width: auto; /* 横幅は自動調整 */
-    height: 100vh; /* 画面の縦幅いっぱいに表示 */
-    object-fit: cover; /* 必要に応じて画像の一部を切り取る */
-    object-position: left top; /* 画像を中央寄せ */
-}
-.container{
-    position: relative; 
-    height: 844px;
-}
-
-.moya_pic{
-    position: absolute; 
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    z-index: -1; 
-}
-
-.moya_pic img{
-    object-fit: cover; 
-    clip-path: circle(2000px at 0% 150%);
-    /*filter: blur(50px);*/
-}
-
-.moya_pic2{
-    position: absolute; 
-    max-width: 100%;
-    z-index: -2; 
-}
-
-.moya_pic2 img{
-    object-fit: cover; 
-    clip-path: circle(2000px at 0% 150%);
-    /*filter: blur(50px);*/
-}
 
 .kaisai_information{
   position: relative;  /* 子要素の絶対位置を基準にする */
