@@ -60,7 +60,6 @@ dotlottie-player {
 
 }
 
-
 .loader span {
   position: flex;
   width: 40px;
@@ -81,7 +80,10 @@ dotlottie-player {
   gap: 0.5em; /* 行間の調整 */
   writing-mode: vertical-rl; /* 縦書き */
   text-orientation: upright; /* 文字を正立 */
-  font-family: "HueiNijimiShogoMinchoStdHv", "Yu Mincho", serif;
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
   transform: scaleY(0.97); /* 縦の比率を97%に */
   line-height: 1; /* 余白を削減 */
   font-size: 20px;
@@ -306,12 +308,20 @@ dotlottie-player {
     color: #FFF;
   }
 
+  @media (min-width: 750px) {
+    .sp-only{
+      display: none;
+    }
+  }
+
   .event_title {
     margin-top :-350px;
     padding-left:15%;
     padding-right: 15%;
-    font-family: "DNP ShueiYMinStd";
-    font-size: 32px;
+    font-family: dnp-shuei-mincho-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 4.48px;
@@ -321,7 +331,7 @@ dotlottie-player {
     padding-left:15%;
     /*width: 209px;
     height: 83.213px;*/
-    width: 15vw;
+    width: 14vw;
     height: auto;
   }
 
@@ -335,21 +345,29 @@ dotlottie-player {
   .venue_name {
     margin-top: -32px;
     padding-left: 35%;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
     line-height: 150%; /* 36px */
     letter-spacing: 3.36px;
     display:flex;
+    color: #DDDDDD;
+    
+
+    font-family: dnp-shuei-mincho-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .venue_address {
     color: var(--gray, #BABABA);
     margin-top: -15px;
     padding-left: 35%;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
     line-height: 150%; /* 24px */
     letter-spacing: 2.24px;
+
+    font-family: dnp-shuei-mincho-pr6n, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .black_blank{
@@ -389,7 +407,7 @@ transform: translate(0px, 320px);
 
 .more_detail {
     font-family:  "futura-pt", sans-serif;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 450;
     line-height: normal;
     letter-spacing: 1.6px;
