@@ -351,7 +351,6 @@ dotlottie-player {
     display:flex;
     color: #DDDDDD;
     
-
     font-family: dnp-shuei-mincho-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -486,20 +485,23 @@ letter-spacing: 2.8px;
     margin-top: -50px;
     height: 960px;
 }
+
 .exhibition_title {
     padding-top: 377px;
     font-size: 32px;
-font-weight: 900;
-line-height: 150%; /* 48px */
-letter-spacing: 4.48px;
+    font-weight: 900;
+    line-height: 150%; /* 48px */
+    letter-spacing: 4.48px;
 }
 
 .exhibition_explain {
+padding: 0 56px;
 font-size: 20px;
 font-weight: 400;
 line-height: 150%; /* 30px */
 letter-spacing: 2.8px;
 }
+
 .button2{
     display: inline-flex;
     text-decoration: none;

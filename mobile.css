@@ -221,9 +221,9 @@ dotlottie-player {
     font-family: dnp-shuei-mincho-pr6n, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 140%; 
 }
 
@@ -424,7 +424,7 @@ gap: 32px; /* アイテム間の隙間 */
 }
 
 .exhibition_explain {
-    padding: 0px 20px;
+    padding: 0px 24px;
     text-align: center;
     font-family: Avenir;
     font-size: 12px;
