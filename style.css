@@ -403,7 +403,7 @@ dotlottie-player {
   position: relative;
     width: 535px;
     margin-left: 10%;
-    margin-top: -400px;
+    margin-top: 400px;
 text-align: center;
 font-family: Orbitron;
 font-size: 96px;
@@ -427,7 +427,7 @@ z-index: 10;
 text-align: left;
   }
 
-  #main-image {
+  #main-image-desktop {
     margin-top: 250px;
     margin-left: -50px;
       position: relative;
@@ -441,6 +441,9 @@ text-align: left;
       background-color: #000;
   }
   
+  #main-image-mobile {
+    display: none;
+  }
   #project_pic {
       margin-left: 800px;
       margin-top: -800px;

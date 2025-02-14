@@ -206,7 +206,7 @@ dotlottie-player {
   position: relative;  /* 子要素の絶対位置を基準にする */
   background-color: #000000;
   padding-top: 40px;
-  height: 200px;
+  height: 500px;
   width: auto;
   color: #FFF;
   z-index: 305;
@@ -293,153 +293,281 @@ dotlottie-player {
 }
 /*--------------------------------------------------------------- project --------------------------------------------------------------------*/
 
-.contents2{
-  display: initial;
-  background-color: black;
-  width: auto;
-  height: 844px;
+.contents2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; 
+  background-color: #000000;
+  overflow: hidden;
+  height: 900px;
+  color: #FFF;
+  margin-top: 0px;
 }
+
+.black_blank2{
+  margin-top: -40px;
+  width: 100%;
+  height: 900px;
+  background: var(--black, #000000);
+}
+
+/*.contents2{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 844px;
+  width: auto;
+  overflow-x: hidden; 
+  display: initial;
+  position: relative; 
+  background-color: #000000;
+  color: #FFF;
+}
+
+.black_blank2{
+  position: absolute; 
+  margin-top: -40px;
+  width: 100%;
+  height: 844px;
+  background: var(--black, #000000);
+}*/
 
 .project_en{
   position: relative;
-  color: #FFF;
-    width: 535px;
-    margin-left: 10%;
-    padding-top: 400px;
-text-align: center;
-font-family: Orbitron;
-font-size: 96px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-z-index: 10;
-  }
+  width: 210px;
+  padding-top:300px;
+  margin: auto;
 
-  .project_jp{
-position: relative;
-margin-left: 10%;
-font-family: Avenir;
-font-size: 24px;
-font-style: normal;
-font-weight: 900;
-line-height: 150%; /* 48px */
-letter-spacing: 4.48px;
-margin-bottom: -700px;
-z-index: 10;
-text-align: left;
-  }
+  font-family: orbitron, sans-serif;
+  z-index: 10;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
 
-  #main-image {
-    padding-top: 150px;
-    transform: translate(-100px,100px);
-      position: relative;
-      opacity: 1;
-      /*transition: opacity 0.1s linear;*/
-      width: auto;
-      height: 844px;
-      overflow: hidden;
-      z-index: -1;
-      object-fit: cover;
-      background-color: #000;
-  }
-  
-  #project_pic {
-      transform: translate(750px,-700px);
-      position: absolute;
-      opacity: 0;
-      width: 600px;
-      height: 600px;
-      overflow: hidden;
-      z-index: 3;
-      object-fit: cover;
-  }
-    
-  #covering-container{
-    /*background-color: aqua;*/
-    margin-top: -1000px;
-    transform: translate(0%,0%);
-    position:absolute;
-    overflow: hidden;
-    /*left: 300px;*/
-    z-index: 5;
-    height: 844px;
-    width: 844px;
-    }
-    
-  #covering{
-      position:absolute;
-      overflow: hidden;
-      top: -250px;
-      left: 300px;
-      z-index: 2;
+.project_jp{
+  position: relative;
+  width: 210px;
+  text-align: center;
+  margin: auto;
+
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; /* 48px */
+  z-index: 10;
+  letter-spacing: 1.12px;    
 }
 
 
-  #project-title{
-      position: relative;
-      margin-top: -500px;
-      margin-left: 10%;
-      font-size: 32px;
-      color: white;
-      z-index: 10;
-      text-align: left;
+/*.buttons {
+  position: relative;
+  margin-top: -370px;
+  z-index: 10;
+}
+
+.switch-button1 {
+  position: relative;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 44px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 500px; 
+  z-index: 10;
+}
+
+.switch-button2 {
+  position: relative;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 44px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 500px; 
+  z-index: 10;
+}
+
+/*.switch-button1:hover {
+  background-color: white;
+  color: black;
+}
+
+.switch-button2:hover {
+  background-color: white;
+  color: black;
+}*/
+
+#main-image-desktop {
+  display: none;
+}
+
+#main-image-mobile {
+  display: block;
+  padding-top: 0; /* 不要なpaddingは削除 */
+  height: 1100px; /* 高さを指定 */
+  width: auto; /* 横幅を自動設定（画像のサイズに合わせる） */
+  position: absolute; /* 絶対位置 */
+  top: 0; /* 画面上端に設定 */
+  left: -105%; /* 画面の中央に設定 */
+  margin-top: -150px;
+  /*transform: translateX(-60%) translateY(-24%); /* 水平方向中央、垂直方向で移動なし */
+  
+  opacity: 1;
+  overflow: hidden;
+  z-index: 3;
+  object-fit: cover; /* 画像を画面に合わせる */
+}
+
+#project_pic {
+  /*transform: translateY(0%) translateX(-50%);*/
+  margin-left: -30%;
+  margin-top: 0px;
+  position: absolute;
+  opacity: 1;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  z-index: 3;
+  object-fit: cover;
+  left: 50%; /* 親要素の横幅の50%に配置 */
+}
+
+#covering-container{
+  /*background-color: aqua;*/
+  margin-top: -380px;
+  position:absolute;
+  overflow: hidden;
+  z-index: 5;
+  height: 844px;
+  width: 844px;
+  padding: 0%;
   }
 
-  #project-description {
-      position: relative;
-      margin-top: 20px;
-      font-size: 16px;
-      width: 600px;
-      color: white;
-      margin-left:10%;
-      z-index: 10;
-      text-align: left;
-  }
+#covering{
+  position:absolute;
+  overflow: hidden;
+  top: -230px;
+  margin-left: -800px;
+  
+  z-index: 2;
+}
 
-  .refbuttons{
-      position: relative;
-      display: flex;
-      transform: translate(10%,50px);
-      z-index: 10;
-      text-align: left;
-  }
+#project-title {
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 16px;
+  font-style: normal;
+  color: white;
+  letter-spacing: 1.28px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  .refbutton{
-      position: relative;
-      color: var(--gray, #BABABA);
-      font-family: Avenir;
-      font-size: 16px;
-      font-weight: 400;
-      background-color: transparent;
-      border: 2px solid transparent;
-      z-index: 10;
-  }
+  margin-left: 10%;
+  margin-top: 310px; /* 310pxの間隔を追加 */
+  z-index: 10;
+  text-align: center;
 
-  .refbutton:hover{
-      position: relative;
-      color: white;
-      text-decoration: underline;
-  }
+  width: 210px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  .buttons{
-    display:none;
-  }
 
+#project-description {
+  font-family: Avenir;
+  font-weight: 350;
+  font-size: 12px;
+  font-style: normal;
+  color: white;
+  letter-spacing: 0.96px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  z-index: 10;
+  text-align: center;
+  width: 340px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+  padding: 8px;
+}
+
+.refbuttons {
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+
+  position: relative;
+  display: flex;
+  justify-content: center; /* 横幅の中央に配置 */
+  z-index: 10;
+  text-align: center;
+  transform: translateY(50px); /* 必要に応じて調整 */
+
+  padding-top: 24px;
+}
+
+
+.refbutton{
+  position: flex;
+
+  text-align: center;
+
+  color: var(--gray, #BABABA);
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid transparent;
+  z-index: 10;
+}
 /*--------------------------------------------------------------- labo --------------------------------------------------------------------*/
 
 
-.contents3{
-  display: initial;
-  background-color: black;
-  color: #FFF;
-  width: auto;
+.contents3 {
+  position: relative; 
+  background-color: #000000;
+  overflow: hidden;
   height: 844px;
+  color: #FFF;
+  margin-top: 0px;
+}
+
+.black_blank3{
+  margin-top: -40px;
+  width: 100%;
+  height: 844px;
+  background: var(--black, #000000);
 }
 
 .labo_en{
 position: relative;
 margin-left: 10%;
-margin-top: 0px;
+margin-top: -700px;
 font-family: Orbitron;
 font-size: 36px;
 font-style: normal;
@@ -454,7 +582,7 @@ text-align: left;
 position: relative;
 margin-left: 10%;
 font-family: Avenir;
-font-size: 24px;
+font-size: 14px;
 font-style: normal;
 font-weight: 900;
 line-height: 150%; 
@@ -464,13 +592,11 @@ z-index: 10;
 text-align: left;
 }
 
-#labo-title{
-transform: translate(0px,0px);
-}
-
 #main-image2 {
-transform: translate(-220px,500px) rotate(-40deg); ;
-position: relative;
+transform: rotate(-40deg); 
+margin-left: -40%;
+margin-top: 450px;
+position: e;
 opacity: 1;
 width: auto;
 height: 844px;
@@ -480,21 +606,22 @@ object-fit: cover;
 }
 
 #labo_pic {
-transform: translate(200px,-100px);
+  transform: translate(0px,-580px) rotate(0deg); 
 position: relative;
-opacity: 0;
+margin-left: 55%;
+/*opacity: 0;*/
 width: 200px;
 height: 200px;
 overflow: hidden;
-z-index: 10;
+z-index: 3;
 object-fit: cover;
 }
 
 #labo-title{
 position: relative;
-margin-top: -280px;
+margin-top: -780px;
 margin-left: 10%;
-font-size: 32px;
+font-size: 14px;
 color: white;
 z-index: 10;
 text-align: left;
@@ -511,6 +638,47 @@ z-index: 10;
 text-align: left;
 }
 
+.buttons{
+  margin-top: 300px;
+  gap: 70vw;
+  margin-left: 50%;
+  position: relative;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.labo-button{
+  position: relative;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  z-index: 10;
+}
+
+.labo-button:hover{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: 1.5px solid #ffffff;
+}
+
+
 .refbuttons2-1{
 display: none;
 }
@@ -525,8 +693,9 @@ display: none;
 
 #covering2-container{
 /*background-color: aqua;*/
-margin-top: -2500px;
-transform: translate(0%,0%);
+margin-top: -1000px;
+transform:rotate(-40deg);
+/*transform: translate(0%,0%);*/
 position:absolute;
 overflow: hidden;
 /*left: 300px;*/
@@ -537,10 +706,11 @@ width: 844px;
 
 #covering2{
 /*background-color: aqua;*/
+height: 844px;
+width:844px;
 position:absolute;
 overflow: hidden;
-transform: translate(300px,0px);
-left: 250px;
+margin-left: -350px;
 z-index: 5;
 }
 

@@ -142,20 +142,21 @@
 
   <!------------------------------------kaisai jouhou---------------------------------------->
     <div class="contents2">
-        <div class="black_blank2"></div>
+        <!--div class="black_blank3"></div-->
         <div class="project_en">PROJECT</div>
         <div class="project_jp">総合プロジェクト</div>
-        <img id="main-image" src="images/projectheat.png" alt="画像1" >
-        <img id="project_pic" src="images/shotengai.png" alt="画像1" >
+        <img id="main-image-desktop" src="images/projectheat.png" alt="デスクトップ" >
+        <img id="main-image-mobile" src="images/projectheat_mobile.png" alt="モバイル" >
+        <img id="project_pic" src="images/shotengai.png" alt="商店街プロジェクト" >
         <div id="covering-container">
-          <img id="covering" src="images/covering.svg" alt="画像1" >
-          </div>
+          <img id="covering" src="images/covering.svg" alt="カバー" >
+        </div>
         <div id="project-title">商店街プロジェクト</div>
         <div id="project-description">墨田の下町で商店街の価値向上に向けたブランド作りを行なっている。商業者から医療従事者、区議会議員まで、地域に関わる多様なメンバーとチームになり、あらゆる企画・制作を通じて魅力的な空間づくりを目指す。</div>
-        <div class = "buttons">
+        <!--div class = "buttons">
             <button id="prev-button" class="switch-button1">＜</button>
             <button id="next-button" class="switch-button2">＞</button>
-        </div>
+        </div-->
         <div class = "refbuttons">
             <button id="button1" class="refbutton">商店街</button>
             <button id="button2" class="refbutton">こども</button>
@@ -165,6 +166,7 @@
             <button id="button6" class="refbutton">ヤマハ</button>
         </div>
     </div>
+
   <!------------------------------------ projects ---------------------------------------->
 
   <div class="contents3">
@@ -172,15 +174,15 @@
     <div class="labo_en">LABO</div>
     <div class="labo_jp">研究室紹介</div>
     <img id="main-image2" src="images/laboheat.png" alt="画像1" >
-    <img id="labo_pic" src="images/モビリティデザイン.png" alt="画像1" >
+      <img id="labo_pic" src="images/モビリティデザイン.png" alt="画像1" >
     <div id="covering2-container">
-    <img id="covering2" src="images/covering2.svg" alt="画像1" >
+      <img id="covering2" src="images/covering2.svg" alt="画像1" >
     </div>
     <div id="labo-title">モビリティデザイン研究室</div>
     <div id="labo-description">社会的・歴史的文脈において人間活動とデザインの関係性を読み解きながら、自然や文化との共生のもとで人びとがよりよく生きることに向けて、場の形成や人びとの行動・経験文化のありかたをデザインとして提案する。</div>
     <div class = "buttons">
-      <button id="prev-button" class="switch-button1">＜</button>
-      <button id="next-button" class="switch-button2">＞</button>
+      <button id="prev-button2" class="labo-button">＜</button>
+      <button id="next-button2" class="labo-button">＞</button>
   </div>
     <div class = "refbuttons2-1">
         <button id="button2-1" class="refbutton2">モビリティデザイン研究室</button>
@@ -254,7 +256,7 @@
   <section id = "sponsor">
     <div class = "tail">
       <img src = "./images/tail.png"/>
-    </div>   <!--半円-->
+    </div>   
     <div class ="contents6">
       <h1 class="sponsor_title">Sponsor</h1>
       <h2 class="sponsor_title_jp">協賛企業</h2>
@@ -282,6 +284,30 @@
   <script src="loading.js"></script>
   <script src="project.js"></script>
   <script src="labo.js"></script>
+
+
+
+<!--script>
+  (function(d) {
+    var config = {
+      kitId: 'syt4qro',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'weg7gkd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script-->
 
 </body>
 </html>

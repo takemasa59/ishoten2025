@@ -48,6 +48,17 @@
                     updateImageAndDescription();
                 });
             });
+
+            document.getElementById("next-button2").addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % images2.length;
+                updateImageAndDescription();
+            });
+
+            document.getElementById("prev-button2").addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % images2.length;
+                updateImageAndDescription();
+            });
+        
         
             window.addEventListener("load", updateImageAndDescription);
         })();
