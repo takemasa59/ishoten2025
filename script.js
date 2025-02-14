@@ -8,4 +8,4 @@ window.addEventListener('scroll', () => {
   const scrollFraction = scrollTop / documentHeight; // スクロール量の割合
   const frame = Math.min(scrollFraction * 1500, 1500); // 0〜100%の範囲に正規化
   player.seek(frame); // フレームを指定してアニメーション位置を更新
-});
+})
