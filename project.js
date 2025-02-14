@@ -11,7 +11,8 @@
             let fadeIn;
         
             function updateImageAndDescription() {
-                const mainImage = document.getElementById("main-image");
+                const mainImage = document.getElementById("main-image-desktop");
+                const mainImageMobile = document.getElementById("main-image-mobile");
                 const projectPic = document.getElementById("project_pic");
                 const imageTitle = document.getElementById("project-title");
                 const imageDescription = document.getElementById("project-description");
@@ -19,6 +20,7 @@
         
                 if (fadeIn) clearInterval(fadeIn);
                 mainImage.style.opacity = 0;
+                mainImageMobile.style.opacity = 0;
                 let size = 100;
                 let opacity = 0;
         
@@ -31,6 +33,7 @@
                     opacity += 0.05;
                     covering.style.transform = `scale(${1 + size / 500})`;
                     mainImage.style.opacity = opacity;
+                    mainImageMobile.style.opacity = opacity;
                     projectPic.style.opacity = opacity;
                     if (size >= 4500) clearInterval(fadeIn);
                 }, 50);
