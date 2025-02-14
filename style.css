@@ -74,10 +74,10 @@ dotlottie-player {
 @keyframes l1 {to{transform: rotate(.5turn)}}
 
 .scroll_down h2 {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start; /* 上端を揃える */
-  gap: 0.5em; /* 行間の調整 */
+  gap: 0.2em; /* 行間の調整 */
   writing-mode: vertical-rl; /* 縦書き */
   text-orientation: upright; /* 文字を正立 */
   font-family: dnp-shuei-mincho-pr6n, sans-serif;
@@ -89,9 +89,13 @@ dotlottie-player {
   font-size: 20px;
 }
 
-.scroll_down h2 span {
-  display: block; /* 1つ1つをブロック要素に */
+.scroll_down h2 .year {
+  display: inline-block;
+  writing-mode: horizontal-tb;
+  transform: rotate(90deg);
 }
+
+
 
 .loaded {
   opacity: 0;
