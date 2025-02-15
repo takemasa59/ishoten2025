@@ -741,23 +741,7 @@ align-items: center;
 }
 
 .line1_double {
-  animation: loop_animation_right_double 24s linear infinite;
-  white-space: nowrap;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-}
-
-.line2_double {
-  animation: loop_animation_right_double 22s linear infinite;
-  white-space: nowrap;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-}
-
-.line3_double {
-  animation: loop_animation_right_double 18s linear infinite;
+  animation: loop_animation_right_double 36s linear infinite;
   white-space: nowrap;
   color: #FFF;
   display: flex;

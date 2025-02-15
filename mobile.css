@@ -604,6 +604,7 @@ text-align: left;
 }
 
 #labo-description {
+height: 164px;
 position: relative;
 margin-top: 20px;
 font-size: 12px;
@@ -744,7 +745,7 @@ transform:rotate(-40deg);
 position:absolute;
 overflow: hidden;
 z-index: 5;
-height: 844px;
+height: 1000px;
 width: 844px;
 }
 
@@ -753,7 +754,7 @@ height: 844px;
 width:844px;
 position:absolute;
 overflow: hidden;
-margin-left: -350px;
+margin-left: -250px;
 z-index: 5;
 }
 

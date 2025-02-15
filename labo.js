@@ -13,7 +13,8 @@
               { src: "images/サステナブルデザイン.png", title: "サステナブルデザイン研究室",description: "本研究室は、エコビジネス手法やエコデザイン戦略、持続可能な教育を通じて、持続可能な製品・サービス開発に取り組む工業デザイナーを育成し、地域・世界の持続可能な社会に貢献することを目的としている。" },
               { src: "images/デザイン文化計画.png", title: "デザイン文化計画研究室",description: "「野に出て生活を学ぶ」をモットーとし、地域の生活者を師としてその生活文化に込められた知恵や思いを汲み取ることで、物の色や形を決定するだけにとどまらない豊かな生活のためのデザインを実現する。" },
               { src: "images/システムプランニング.png", title: "システムプランニング研究室",description: "本研究室ではプロダクトやサービスを始め、多岐に渡るデザインを提案する。産学協同研究のプロジェクトや海外ワークショップに参画し、より実践的なデザインワークを行う。" },
-              { src: "images/環境デザイン.png", title: "環境デザイン研究室",description: "" },
+              { src: "images/環境デザイン.png", title: "環境デザイン研究室",description: "人々の暮らしの中にある様々な様態の現場に密着しより望ましい環境を具現化するデザインを研究している。家具や遊具、空間計画・演出、緑環境、商環境、地域など人がつくりだした環境全てを総合的に対象としている。" },
+              { src: "images/人間情報科学.png", title: "人間情報科学研究室", description: "本研究室では、より人間特性に合致したヒューマンインタフェースの実現を目指し、人間の多用な情報処理に関する諸問題について、生体工学やデジタル技術等を使い多視点から研究と提案を行う。"}
           ];
 
           const works = [
@@ -21,8 +22,19 @@
                 { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
                 { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
                 { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
+                { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
+                { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
+                { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
+                { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
+                { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
+                { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
               ],
               [
+                { src: "images/コマーシャル/早坂.webp", title: "理系就活の可能性を広げる「営業ボードゲーム」の制作", description: "#ボードゲーム #営業 #コンサル" },
+                { src: "images/コマーシャル/杉.webp", title: "子供の自己肯定感向上を図る子供に作ってもらうオリジナル絵本", description: "#オリジナル絵本 #子供" },
+                { src: "images/コマーシャル/畠山.webp", title: "SNSを利用して15年前に流行したキャラクターのリブートを試みる", description: "#豆しば #アニメーション" },
+                { src: "images/コマーシャル/松藤.webp", title: "訪日外国人の購買意欲を促進する土産菓子パッケージの提案ー小江戸川越を舞台にー", description: "#インバウンド消費 #地域経済活性化" },
+                { src: "images/コマーシャル/杉山RGB.webp", title: "形状、重さの観点から抱き心地を追求した、使用者に安心感を与える抱き具の制作", description: "#安心感 #包み込まれる #重さと形" },
                 { src: "images/コマーシャル/早坂.webp", title: "理系就活の可能性を広げる「営業ボードゲーム」の制作", description: "#ボードゲーム #営業 #コンサル" },
                 { src: "images/コマーシャル/杉.webp", title: "子供の自己肯定感向上を図る子供に作ってもらうオリジナル絵本", description: "#オリジナル絵本 #子供" },
                 { src: "images/コマーシャル/畠山.webp", title: "SNSを利用して15年前に流行したキャラクターのリブートを試みる", description: "#豆しば #アニメーション" },
@@ -35,9 +47,20 @@
               { src: "images/コミュ/森永.webp", title: "レトロな印象を与えるカタカナフォントの制作", description: "レトロ #フォント" },
               { src: "images/コミュ/北村.webp", title: "ストーリーテリングを活かしたサブスクサービスにおけるアイキャッチデザインの提案", description: "#ストーリーテリング #アイキャッチ" },
               { src: "images/コミュ/真田.webp", title: "スマートフォンを用いた\nカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現"},
-              { src: "images/公園プロジェクト/砂川.webp", title: "利用者の優しさを引き出すサインの提案〜隅田公園において〜", description: "#公園 #サインデザイン #挨拶 #いきもの感 #鏡" }
+              { src: "images/公園プロジェクト/砂川.webp", title: "利用者の優しさを引き出すサインの提案〜隅田公園において〜", description: "#公園 #サインデザイン #挨拶 #いきもの感 #鏡" },
+              { src: "images/コミュ/渡辺.webp", title: "植物の造形美を表現した花の種のパッケージの制作", description: "#パターン #パッケージ #植物 #造形" },
+              { src: "images/コミュ/真田.webp", title: "スマートフォンを用いたカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現" },
+              { src: "images/コミュ/森永.webp", title: "レトロな印象を与えるカタカナフォントの制作", description: "レトロ #フォント" },
+              { src: "images/コミュ/北村.webp", title: "ストーリーテリングを活かしたサブスクサービスにおけるアイキャッチデザインの提案", description: "#ストーリーテリング #アイキャッチ" },
+              { src: "images/コミュ/真田.webp", title: "スマートフォンを用いた\nカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現"},
+              { src: "images/公園プロジェクト/砂川.webp", title: "利用者の優しさを引き出すサインの提案〜隅田公園において〜", description: "#公園 #サインデザイン #挨拶 #いきもの感 #鏡" },
           　],
           [
+            { src: "images/コンテク/桝田.webp", title: "煙霧体を操作するインタラクティブ体験装置の提案", description: "#煙 #霧 #インタラクション" },
+            { src: "images/コンテク/佐久間.webp", title: "視覚障害者のための屋内空間における新しい案内手法の提案", description: "#視覚障害者 #空間イメージ #対等" },
+            { src: "images/コンテク/錦織.webp", title: "野菜摂取量概算アプリケーションとその活用の提案", description: "#野菜 #栄養素 #食事管理" },
+            { src: "images/コンテク/尾原.webp", title: "初対面の相手に認識してもらうための自己紹介の手法", description: "#自己紹介 #友達作り" },
+            { src: "images/コンテク/白根.webp", title: "並置混色を楽しみながら理解する表現方法の探求", description: "#並置混色 #知覚心理" },
             { src: "images/コンテク/桝田.webp", title: "煙霧体を操作するインタラクティブ体験装置の提案", description: "#煙 #霧 #インタラクション" },
             { src: "images/コンテク/佐久間.webp", title: "視覚障害者のための屋内空間における新しい案内手法の提案", description: "#視覚障害者 #空間イメージ #対等" },
             { src: "images/コンテク/錦織.webp", title: "野菜摂取量概算アプリケーションとその活用の提案", description: "#野菜 #栄養素 #食事管理" },
@@ -49,9 +72,19 @@
             { src: "images/意匠/野畠.webp", title: "旅するテーブル-食事を通じて人と人とを繋ぐ移動式テーブル-", description: "#縁食 #一期一会 #食の力" },
             { src: "images/意匠/中島.webp", title: "着用者の表情変化を相手に隠さない仮面の制作", description: "#仮面 #表情" },
             { src: "images/意匠/小松野.webp", title: "吹き付け和紙と発泡スチロールを用いた中空かつ開口部のない一枚から成る紙の立体成形", description: "#紙 #立体成形 #紙漉き" },
+            { src: "images/意匠/阿部.webp", title: "風景の領域をレイアウトに取り入れた漫画の制作-漫画『虚実の境界』を描いて-", description: "#漫画 #虚実 #境界線 #混乱" },
+            { src: "images/意匠/野畠.webp", title: "旅するテーブル-食事を通じて人と人とを繋ぐ移動式テーブル-", description: "#縁食 #一期一会 #食の力" },
+            { src: "images/意匠/中島.webp", title: "着用者の表情変化を相手に隠さない仮面の制作", description: "#仮面 #表情" },
+            { src: "images/意匠/小松野.webp", title: "吹き付け和紙と発泡スチロールを用いた中空かつ開口部のない一枚から成る紙の立体成形", description: "#紙 #立体成形 #紙漉き" },
           ],
           [
-            { src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学" },
+            { src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
+            {src: "images/人間生活工学/片岡.webp", title: "tkms versons", description: "#飲酒運転 #人間工学"},
+            {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
+            {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+            {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
+            {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+
           ],
           [
             { src: "images/材料計画/久保.webp", title: "角度によって見え方が変わるアクリル樹脂製サインの提案", description: "#透明 #光 #サイン" },
@@ -59,18 +92,32 @@
             { src: "images/材料計画/隅野.webp", title: "製品から「ほっこり」とした印象を感じる要素について", description: "#ほっこり #温かみ" },
             { src: "images/材料計画/日野.webp", title: "聴覚過敏の方々が使用するイヤーマフの選択肢を広げる", description: "#イヤーマフ #音軽減" },
             { src: "images/材料計画/慶田城.webp", title: "アコースティックギターのピックに代わるサンプルの提案", description: "#アコギ #ブラシ #ハンマー" },
-            { src: "mages/材料計画/田原.webp", title: "材料押出法の3Dプリンターを用いた自作モデルの造形", description: "#3Dプリンター #FDM #プラスチック" },
+            { src: "images/材料計画/田原.webp", title: "材料押出法の3Dプリンターを用いた自作モデルの造形", description: "#3Dプリンター #FDM #プラスチック" },
             { src: "images/材料計画/芹澤.webp", title: "ペットへの愛着形成の要因分析と製品への応用", description: "#ペット #製品 #愛着" },
           ],
           [
+            { src: "images/心理/上条.webp", title: "キャラクターに対する好感度の要因とは：知識と経験の影響", description: "#ｷｬﾗｸﾀｰ #好感度 #共感 #かわいい #性格 #知識 #経験" },
+            { src: "images/心理/佐藤.webp", title: "歌詞の表示方法の違いがミュージックビデオの印象に与える影響", description: "#MV #文字PV #イージング" },
+            { src: "images/心理/上条.webp", title: "キャラクターに対する好感度の要因とは：知識と経験の影響", description: "#ｷｬﾗｸﾀｰ #好感度 #共感 #かわいい #性格 #知識 #経験" },
+            { src: "images/心理/佐藤.webp", title: "歌詞の表示方法の違いがミュージックビデオの印象に与える影響", description: "#MV #文字PV #イージング" },
             { src: "images/心理/上条.webp", title: "キャラクターに対する好感度の要因とは：知識と経験の影響", description: "#ｷｬﾗｸﾀｰ #好感度 #共感 #かわいい #性格 #知識 #経験" },
             { src: "images/心理/佐藤.webp", title: "歌詞の表示方法の違いがミュージックビデオの印象に与える影響", description: "#MV #文字PV #イージング" },
           ],
           [
             { src: "images/サステナブル/山田晃.webp", title: "紙皿と紙スプーンとして再利用可能なケーキボックス", description: "#ケーキ #テイクアウト #サステナブル" },
             { src: "images/サステナブル/藤井.webp", title: "自転車用モジュラーアクセサリの持続可能なデザイン", description: "#自転車 #ライト #風力 #SDGs" },
+            { src: "images/サステナブル/山田晃.webp", title: "紙皿と紙スプーンとして再利用可能なケーキボックス", description: "#ケーキ #テイクアウト #サステナブル" },
+            { src: "images/サステナブル/藤井.webp", title: "自転車用モジュラーアクセサリの持続可能なデザイン", description: "#自転車 #ライト #風力 #SDGs" },
+            { src: "images/サステナブル/山田晃.webp", title: "紙皿と紙スプーンとして再利用可能なケーキボックス", description: "#ケーキ #テイクアウト #サステナブル" },
+            { src: "images/サステナブル/藤井.webp", title: "自転車用モジュラーアクセサリの持続可能なデザイン", description: "#自転車 #ライト #風力 #SDGs" },
           ],
           [
+            { src: "images/デザイン文化計画/栗田.webp", title: "南房総市千倉町における白間津のオオマチの持続可能なあり方", description: "#祭りバカ #地域の絆 #みんなで楽しむハレの日" },
+            { src: "images/デザイン文化計画/南.webp", title: "墨田区における生活者による資源発見・資源活用型のデザインワークショップの実践", description: "#墨田区 #ワークショップ #地域資源 #KJ法" },
+            { src: "images/デザイン文化計画/岩下.webp", title: "鋸南町にある空き家を活用した地域の人々の関わりの促進", description: "#自然の中でご飯とおはなし #地元の人が改修した空き家" },
+            { src: "images/デザイン文化計画/仁木.webp", title: "墨田区における水害対策用品「避難の緊急度によって形を変化させる防災バッグ」", description: "#水害対策 #防災バッグ #食料棚" },
+            { src: "images/デザイン文化計画/田村.webp", title: "歴史的造形物の3Dデータ取得・保存と活用", description: "3D #歴史的造形物 #埴輪 #ハニワ #はにわ" },
+            { src: "images/デザイン文化計画/細田.webp", title: "万祝の型紙図案のデジタルデータの取得・活用に基づく新たな表現方法の模索とグッズの提案", description: "#千葉県 #漁師の着物 #デジタルデータの取得と活用" },
             { src: "images/デザイン文化計画/栗田.webp", title: "南房総市千倉町における白間津のオオマチの持続可能なあり方", description: "#祭りバカ #地域の絆 #みんなで楽しむハレの日" },
             { src: "images/デザイン文化計画/南.webp", title: "墨田区における生活者による資源発見・資源活用型のデザインワークショップの実践", description: "#墨田区 #ワークショップ #地域資源 #KJ法" },
             { src: "images/デザイン文化計画/岩下.webp", title: "鋸南町にある空き家を活用した地域の人々の関わりの促進", description: "#自然の中でご飯とおはなし #地元の人が改修した空き家" },
@@ -101,22 +148,7 @@
                 { src: "images/商店街/清水.webp", title: "夜のあづまテラスにおいて人の気配を感じられる照明の提案", description: "#夜のあづまテラスに着目 #照明" },
                 { src: "images/商店街/藤崎.webp", title: "商店街に新たな居場所を創出し、地域の顔となる拠点の提案", description: "#拠点 #休憩スペース" },
               ],
-              [
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-              ],
-              [
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-                { src: "", title: "", description: "" },
-              ],
+            
   
             ];
 
@@ -150,7 +182,7 @@
           }
 
           function updateWorks() {
-              [...Array(10)].forEach((_, i) => {
+              [...Array(13)].forEach((_, i) => {
                 const workData = works[currentIndex][i]; // データを取得
                 const workImage = document.getElementById(`work-image${i }`);
                 const workTitle = document.getElementById(`work-title${i }`);
@@ -185,7 +217,7 @@
             }
             
       
-          [...Array(10)].forEach((_, i) => {
+          [...Array(13)].forEach((_, i) => {
               document.getElementById(`button2-${i + 1}`).addEventListener("click", () => {
                   currentIndex = i;
                   updateImageAndDescription();
