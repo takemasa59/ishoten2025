@@ -805,6 +805,10 @@ background-color: #000;
   align-items: center;
 }
 
+.line1:hover .line1_double{
+  animation-play-state: paused;
+}
+
 @keyframes loop_animation_right_double {
   0% {
     transform: translateX(0%);

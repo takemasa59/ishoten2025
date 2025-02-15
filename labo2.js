@@ -249,7 +249,7 @@
     });
     
     document.getElementById("prev-button2").addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % images2.length;
+        currentIndex = (currentIndex - 1) % images2.length;
         updateImageAndDescription();
         updateWorks();
     });
