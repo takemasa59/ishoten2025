@@ -206,7 +206,7 @@ dotlottie-player {
   position: relative;  /* 子要素の絶対位置を基準にする */
   background-color: #000000;
   padding-top: 40px;
-  height: 500px;
+  height: 320px;
   width: auto;
   color: #FFF;
   z-index: 305;
@@ -888,14 +888,14 @@ gap: 32px; /* アイテム間の隙間 */
 }
 
 .exhibition_explain {
-    padding: 0px 20px;
-    text-align: center;
-    font-family: Avenir;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 150%; /* 18px */
-    letter-spacing: 0.96px;
+  padding: 0px 32px;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.96px;
 }
 
 .button2{
