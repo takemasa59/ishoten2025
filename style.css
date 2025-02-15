@@ -424,6 +424,7 @@ dotlottie-player {
   margin-bottom: -820px;
   z-index: 10;
   text-align: left;
+  color: var(--gray);
 }
 
 #main-image-desktop {
@@ -508,11 +509,12 @@ dotlottie-player {
 
 #project-description {
   position: relative;
+  color: var(--gray);
   margin-top: 20px;
   font-size: 16px;
   height: 60px;
   width: 600px;
-  color: white;
+  color: var(--gray);
   margin-left:10%;
   z-index: 10;
   text-align: left;
@@ -612,6 +614,7 @@ letter-spacing: 4.48px;
 margin-bottom: -700px;
 z-index: 10;
 text-align: left;
+color:var(--gray);
 }
 
 
@@ -696,7 +699,7 @@ background-color: #000;
   font-size: 16px;
   height: 60px;
   width: 600px;
-  color: white;
+  color:var(--gray);
   margin-left:10%;
   z-index: 10;
   text-align: left;
@@ -705,9 +708,10 @@ background-color: #000;
 .work {
   display: flex;
   width: 528px;
-  min-height: 116.84px; /* 高さを固定ではなく、最小高さとして指定 */
+  height: 104px; /* 高さを固定ではなく、最小高さとして指定 */
   border: 1px solid var(--white, #FFF);
   border-radius: 16px;
+  border-color: var(--gray);
   overflow: hidden; /* はみ出し防止 */
   padding: 0px;
   align-items: center; /* 中央揃え */
@@ -716,23 +720,11 @@ background-color: #000;
   margin-right: 16px;
 }
 
-.work {
-  display: flex;
-  width: 528px;
-  min-height: 116.84px; /* 高さを固定ではなく、最小高さとして指定 */
-  border: 1px solid var(--white, #FFF);
-  border-radius: 16px;
-  overflow: hidden; /* はみ出し防止 */
-  padding: 0px;
-  align-items: center; /* 中央揃え */
-  gap: 8px;
-  box-sizing: border-box; /* padding を含めたサイズ計算 */
-  margin-right: 16px;
-}
+
 
 /* 作品画像 */
 .work img {
-  width: 183px;
+  width: 178px;
   height: 100.837px;
   border-radius: 16px;
   padding:8px;
@@ -745,34 +737,34 @@ background-color: #000;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 8px 8px;
-  flex: 1; /* 残りのスペースを均等に使う */
+  padding: 8px 4px;
+  gap:0px;
   min-height: 0; /* 高さの崩れを防ぐ */
 }
 
 /* 作品タイトル */
 .work-title {
   color: var(--white, #FFF);
-  font-family: Avenir;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 350;
-  line-height: 150%; /* 24px */
-  letter-spacing: 2.24px;
-  padding: 0px;
-  white-space: normal;
+font-family: Avenir;
+font-size: 16px;
+font-style: normal;
+font-weight: 350;
+line-height: 120%; /* 24px */
+letter-spacing: 2.24px;
+padding: 0px;
+white-space: normal;
 }
 
 /* ハッシュタグ */
 .work-tags {
-  margin-top: 0px;
-  color: var(--white, #FFF);
-  font-family: Avenir;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 21px */
-  letter-spacing: 0.6px;
+  margin-top: -8px;
+  color: var(--gray);
+font-family: Avenir;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 21px */
+letter-spacing: 0.6px;
 }
 
 .line1 {
@@ -923,6 +915,7 @@ background-color: #000;
   font-weight: 400;
   line-height: 150%; /* 36px */
   letter-spacing: 3.36px;
+  color: var(--gray);
 }
 
 .contents4.container {
@@ -1005,6 +998,8 @@ background-color: #000;
   font-weight: 400;
   line-height: 150%; /* 30px */
   letter-spacing: 2.8px;
+  color:var(--gray);
+  margin-top: 4px;
 }
 
 .button2{

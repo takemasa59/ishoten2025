@@ -17,6 +17,10 @@ body {
     top: 0;
   }
 
+    :root {
+    --gray: #b4b4b4; /* 任意のグレーの色 */
+  }
+
 /* Lottieアニメーションの配置とスタイル */
 #lottie-container {
   position: sticky;
@@ -335,7 +339,7 @@ dotlottie-player {
   width: 210px;
   text-align: center;
   margin: auto;
-
+  color: var(--gray);
   font-family: Avenir, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -485,7 +489,6 @@ dotlottie-player {
 
 #project-title{
   position: flex;
-  color: white;
   z-index: 10;
   text-align: left;
   margin-left: 16px;
@@ -494,7 +497,7 @@ dotlottie-player {
   font-weight: 800;
   font-size: 16px;
   font-style: normal;
-  color: white;
+
   letter-spacing: 1.28px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -505,7 +508,6 @@ dotlottie-player {
   font-weight: 350;
   font-size: 12px;
   font-style: normal;
-  color: white;
   letter-spacing: 0.96px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -660,15 +662,15 @@ position: relative;
 margin-top: 20px;
 font-size: 12px;
 width: 160px;
-color: white;
 margin-left:10%;
 z-index: 10;
 text-align: left;
 }
 
+
 .work {
-  width: 271px;
-  height: fit-content;
+  width: 308px;
+  height: 84px;
   border-radius: 8px;
   padding: 0px;
   gap: 8px;
@@ -682,7 +684,7 @@ align-items: flex-start;
 
 /* 作品画像 */
 .work img {
-  width: 113px;
+  width: 110px;
   height: 62.265px;
   border-radius: 8px;
   padding:4px;
@@ -709,14 +711,14 @@ align-items: flex-start;
   color: var(--white, #FFF);
 font-family: Avenir;
 font-size: 12px;
-width: 150px;
+width: 188px;
 height: auto;
 font-style: normal;
 font-weight: 350;
 line-height: 120%;
 letter-spacing: 0.96px;
 white-space: normal;
-margin-top: -104px;
+margin-top: -80px;
 margin-left: 113px;
 }
 
@@ -724,16 +726,24 @@ margin-left: 113px;
 .work-tags {
   position: absolute;
   height: auto;
-  color: var(--white, #FFF);
-font-family: Avenir;
 font-size: 10px;
 font-style: normal;
 font-weight: 400;
 line-height: 120%; /* 21px */
 letter-spacing: 0.5px;
-margin-left: 8px;
+margin-left: 4px;
+margin-top:0px;
+color: var(--gray);
+
 }
 
+.line1_double {
+  animation: loop_animation_right_double 20s linear infinite;
+  white-space: nowrap;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
 
 
 .buttons{
