@@ -534,19 +534,23 @@ dotlottie-player {
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
-
+  
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 24px;
+
+  gap: 8px;
 }
 
 
 .refbutton{
   position: flex;
-
   text-align: center;
+  padding: 0;
 
   color: var(--gray, #BABABA);
   font-family: Avenir;
-  font-size: 2vw; /* 画面幅の2% */;
+  font-size: 3vw; /* 画面幅の2% */;
   font-weight: 400;
   background-color: transparent;
   border: 2px solid transparent;
