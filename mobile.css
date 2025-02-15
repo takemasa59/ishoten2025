@@ -9,17 +9,16 @@ body {
   box-sizing: border-box; /* パディングやボーダーを含めたサイズ計算 */
 }
 
- 
-   /* スクロール領域を確保 */
-   #scroll-container {
-    height: 800vh; /* スクロール用の高さ */
-    position: relative;
-    top: 0;
-  }
+/* スクロール領域を確保 */
+#scroll-container {
+  height: 800vh; /* スクロール用の高さ */
+  position: relative;
+  top: 0;
+}
 
-    :root {
-    --gray: #b4b4b4; /* 任意のグレーの色 */
-  }
+:root {
+  --gray: #b4b4b4; /* 任意のグレーの色 */
+}
 
 /* Lottieアニメーションの配置とスタイル */
 #lottie-container {
@@ -36,8 +35,8 @@ body {
 
 /* Lottieプレイヤーのスタイル */
 dotlottie-player {
-  width: 220vw; /* 横幅を自動調整 */
-  height: auto; /* 高さを自動調整 */
+  width: 300vw; /* 横幅を自動調整 */
+  height: 100vh; /* 高さを自動調整 */
   transform: translate(-50%, -50%); /* 中心基準で配置 */
   position: absolute; /* 中心を固定 */
   top: 50%; /* 縦方向の中央 */
@@ -71,114 +70,114 @@ dotlottie-player {
 
 /* ヘッダーの基本スタイル */
 .header {
-    height: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1300;
-  }
-  
-  .header-container {
-    position: relative;
-    height: 100%;
-  }
-  
-  /* 丸いボタン */
-  .action-button {
-    background-color: #020203;
-    color: #fff;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-  
-  .action-button:hover {
-    background-color: #0D1269;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1300;
+}
 
-  }
+.header-container {
+  position: relative;
+  height: 100%;
+}
   
-  /* 円の拡大アニメーション */
-  .circle-effect {
-    position: fixed;
-    width: 0;
-    height: 0;
-    background-color: #0D1269; /* ホバー時の色と一致 */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    pointer-events: none;
-    transition: width 0.5s ease-out, height 0.5s ease-out;
-    z-index: 1299;
-  }
-  
-  .circle-effect.active {
-    width: 4000px; /* 十分大きな値で画面をカバー */
-    height: 4000px;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
-    z-index: 1299;
-  }
+/* 丸いボタン */
+.action-button {
+  background-color: #020203;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0D1269;
+
+}
+
+/* 円の拡大アニメーション */
+.circle-effect {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background-color: #0D1269; /* ホバー時の色と一致 */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+  transition: width 0.5s ease-out, height 0.5s ease-out;
+  z-index: 1299;
+}
+
+.circle-effect.active {
+  width: 4000px; /* 十分大きな値で画面をカバー */
+  height: 4000px;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
+  z-index: 1299;
+}
 
  /* メニュー全体のスタイル */
 .menu-content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
-    opacity: 0;
-    transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
-    z-index: 1300;
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  opacity: 0;
+  transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
+  z-index: 1300;
+}
   
-  /* ロゴのスタイル */
-  .menu-logo {
-    width: 40px;
-    height: auto;
-    flex-shrink: 0;
-    margin-bottom: 8px; /* ロゴとメニュー項目の間を24px広げる */
-  }
+/* ロゴのスタイル */
+.menu-logo {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+  margin-bottom: 8px; /* ロゴとメニュー項目の間を24px広げる */
+}
   
-  /* メニュー項目のスタイル */
-  .menu-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px; /* gapを8pxに調整 */
-  }
-  
-  .menu-item {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 14px;
-    color: #ffffff;
-    background: none;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    margin-bottom: 8px; /* メニュー項目とSNSの間を8px広げる */
-  }
-  
-  /* SNSアイコンのスタイル */
-  .sns-icons {
-    display: inline-flex;
-    align-items: center;
-    gap: 32px;
-  }
+/* メニュー項目のスタイル */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* gapを8pxに調整 */
+}
+
+.menu-item {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 14px;
+  color: #ffffff;
+  background: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  margin-bottom: 8px; /* メニュー項目とSNSの間を8px広げる */
+}
+
+/* SNSアイコンのスタイル */
+.sns-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+}
 
   
   /* リンクのデフォルトスタイルを無効化 */
@@ -198,10 +197,10 @@ dotlottie-player {
   }
   
 
-  /* ボタンのホバー時の色 */
-  .action-button.active {
-    background-color: #0D1269;
-  }
+/* ボタンのホバー時の色 */
+.action-button.active {
+  background-color: #0D1269;
+}
 
 /* ------------------------------------ヘッダー------------------------------------------*/
 
@@ -516,6 +515,7 @@ dotlottie-player {
   height: 80px;
   width: 360px;
   margin: auto;
+  padding: 16px;
   position: flex;
 }
 
@@ -531,6 +531,9 @@ dotlottie-player {
   z-index: 10;
   text-align: center;
   transform: translateY(0px); /* 必要に応じて調整 */
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
 
   padding-top: 24px;
 }
@@ -543,7 +546,7 @@ dotlottie-player {
 
   color: var(--gray, #BABABA);
   font-family: Avenir;
-  font-size: 12px;
+  font-size: 2vw; /* 画面幅の2% */;
   font-weight: 400;
   background-color: transparent;
   border: 2px solid transparent;
