@@ -315,8 +315,11 @@ dotlottie-player {
 .project_en{
   position: relative;
   width: 210px;
-  margin-top:-550px;
-  margin-left: 28%;
+  margin-top: -550px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  
   font-family: orbitron, sans-serif;
   z-index: 10;
   color: var(--white, #FFF);
@@ -339,7 +342,7 @@ dotlottie-player {
   font-weight: 900;
   line-height: 150%; /* 48px */
   z-index: 10;
-  letter-spacing: 1.12px;    
+  letter-spacing: 1.12px; 
 }
 
 
@@ -409,8 +412,8 @@ dotlottie-player {
   width: auto; /* 横幅を自動設定（画像のサイズに合わせる） */
   position: absolute; /* 絶対位置 */
   top: 0; /* 画面上端に設定 */
-  left: -105%; /* 画面の中央に設定 */
-  margin-top: -150px;
+  left: -85%; /* 画面の中央に設定 */
+  margin-top: -30%;
   /*transform: translateX(-60%) translateY(-24%); /* 水平方向中央、垂直方向で移動なし */
   
   opacity: 1;
@@ -421,16 +424,16 @@ dotlottie-player {
 
 #project_pic {
   /*transform: translateY(0%) translateX(-50%);*/
-  margin-left: -30%;
+  margin-left: 0%;
   margin-top: 0px;
+
+  transform: translateY(5%) translateX(-50%);
   position: absolute;
   opacity: 1;
   width: 280px;
   height: 280px;
-  overflow: hidden;
-  z-index: 3;
+  z-index: 10;
   object-fit: cover;
-  left: 50%; /* 親要素の横幅の50%に配置 */
 }
 
 #covering-container{
@@ -453,7 +456,40 @@ dotlottie-player {
   z-index: 2;
 }
 
-#project-title {
+#project-container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: flex;
+  align-items: center; /* 上下位置を揃える */
+  position: flex;
+
+  margin-top: 310px; /* 310pxの間隔を追加 */
+  margin-bottom: 16px;
+  z-index: 10;
+  text-align: center;
+
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#project-icon {
+  height: 24px;
+  width: 24px;
+  position: flex;
+  z-index: 10;
+  text-align: left;
+}
+
+#project-title{
+  position: flex;
+  color: white;
+  z-index: 10;
+  text-align: left;
+  margin-left: 16px;
+
   font-family: Avenir;
   font-weight: 800;
   font-size: 16px;
@@ -461,15 +497,6 @@ dotlottie-player {
   color: white;
   letter-spacing: 1.28px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  margin-left: 10%;
-  margin-top: 310px; /* 310pxの間隔を追加 */
-  z-index: 10;
-  text-align: center;
-
-  width: 210px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 
@@ -484,11 +511,10 @@ dotlottie-player {
 
   z-index: 10;
   text-align: center;
-  width: 340px;
   height: 80px;
+  width: 360px;
   margin: auto;
-  position: relative;
-  padding: 8px;
+  position: flex;
 }
 
 .refbuttons {
@@ -502,7 +528,7 @@ dotlottie-player {
   justify-content: center; /* 横幅の中央に配置 */
   z-index: 10;
   text-align: center;
-  transform: translateY(50px); /* 必要に応じて調整 */
+  transform: translateY(0px); /* 必要に応じて調整 */
 
   padding-top: 24px;
 }
@@ -583,32 +609,57 @@ object-fit: cover;
 
 #labo_pic {
   transform: translate(0px,-600px) rotate(0deg); 
-position: relative;
-margin-left: 55%;
-/*opacity: 0;*/
-width: 200px;
-height: 200px;
-overflow: hidden;
-z-index: 3;
-object-fit: cover;
+  position: relative;
+  margin-left: 55%;
+  /*opacity: 0;*/
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 3;
+  object-fit: cover;
+}
+
+#labo-container {
+  display: flex;
+  margin-top: -780px; /* 310pxの間隔を追加 */
+  margin-left: 10%;
+  z-index: 10;
+
+  width: fit-content;
+  height: auto;
+}
+
+#labo-icon {
+  height: 24px;
+  width: 24px;
+  position: flex;
+  z-index: 10;
 }
 
 #labo-title{
-position: relative;
-margin-top: -780px;
-margin-left: 10%;
-font-size: 14px;
-color: white;
-z-index: 10;
-text-align: left;
+  position: flex;
+  color: white;
+
+  margin-left: 16px;
+
+  z-index: 10;
+
+  font-family: Avenir;
+  font-weight: 800;
+  font-size: 14px;
+  font-style: normal;
+  color: white;
+  letter-spacing: 1.28px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 #labo-description {
 height: 164px;
 position: relative;
 margin-top: 20px;
 font-size: 12px;
-width: 136px;
+width: 160px;
 color: white;
 margin-left:10%;
 z-index: 10;
