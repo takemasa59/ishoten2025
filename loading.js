@@ -1,5 +1,10 @@
-window.onload = function () {
-    setTimeout(() => {
+window.onload = function() {
+    // スクロールを無効にする
+    document.body.style.overflow = 'hidden';
+
+    // 30秒後にスクロールを有効にする
+    setTimeout(function() {
+        document.body.style.overflow = 'auto';
         const loader = document.querySelector(".loader");
         loader.classList.add("loaded");
 
@@ -10,7 +15,7 @@ window.onload = function () {
         const scrollDown = document.querySelector(".scroll_down");
         scrollDown.style.opacity = "1";
         scrollDown.style.visibility = "visible";
-    }, 100);
+    }, 3000);
 };
 
 // スクロールイベントで `.scroll_down` を隠す
