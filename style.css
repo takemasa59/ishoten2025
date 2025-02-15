@@ -159,14 +159,14 @@ dotlottie-player {
 
 /* ヘッダーの基本スタイル */
 .header {
-    height: 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease;
-  }
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
 
 
 .header.visible {
@@ -174,72 +174,72 @@ dotlottie-player {
   visibility: visible;
 }
   
-  .header-container {
-    position: relative;
-    height: 100%;
-  }
+.header-container {
+  position: relative;
+  height: 100%;
+}
   
   /* 丸いボタン */
-  .action-button {
-    background-color: #020203;
-    color: #fff;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    z-index: 1100;
-    transition: background-color 0.3s ease;
-  } 
+.action-button {
+  background-color: #020203;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+} 
   
-  .action-button:hover {
-    background-color: #0D1269;
-  }
+.action-button:hover {
+  background-color: #0D1269;
+}
 
-  /* 円の拡大アニメーション */
-  .circle-effect {
-    position: fixed;
-    width: 0;
-    height: 0;
-    background-color: #0D1269; /* ホバー時の色と一致 */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 900;
-    pointer-events: none;
-    transition: width 0.5s ease-out, height 0.5s ease-out;
-  }
+/* 円の拡大アニメーション */
+.circle-effect {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background-color: #0D1269; /* ホバー時の色と一致 */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 900;
+  pointer-events: none;
+  transition: width 0.5s ease-out, height 0.5s ease-out;
+}
   
-  .circle-effect.active {
-    width: 5000px; /* 十分大きな値で画面をカバー */
-    height: 5000px;
-    opacity: 1;
-    /*position: fixed;*/
-    transform: translate(-50%, -50%);
-    transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
-  }
+.circle-effect.active {
+  width: 5000px; /* 十分大きな値で画面をカバー */
+  height: 5000px;
+  opacity: 1;
+  /*position: fixed;*/
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease-out, height 0.5s ease-out, opacity 0.3s ease-out;
+}
 
  /* メニュー全体のスタイル */
 .menu-content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
-    opacity: 0;
-    transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
-    z-index: 1200;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  opacity: 0;
+  transition: opacity 1s ease; /* フェードインの所要時間を1秒に */
+  z-index: 1200;
   }
   
   /* ロゴのスタイル */
@@ -306,80 +306,80 @@ dotlottie-player {
 /* ------------------------------------ヘッダー------------------------------------------*/
 
 .kaisai_information {
-    position: relative;  /* 子要素の絶対位置を基準にする */
-    background-color: #000000;
-    height: 400px;
-    color: #FFF;
+  position: relative;  /* 子要素の絶対位置を基準にする */
+  background-color: #000000;
+  height: 400px;
+  color: #FFF;
+}
+
+@media (min-width: 750px) {
+  .sp-only{
+    display: none;
   }
+}
 
-  @media (min-width: 750px) {
-    .sp-only{
-      display: none;
-    }
-  }
+.event_title {
+  margin-top :-350px;
+  padding-left:15%;
+  padding-right: 15%;
 
-  .event_title {
-    margin-top :-350px;
-    padding-left:15%;
-    padding-right: 15%;
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 
-    font-family: dnp-shuei-mincho-pr6n, sans-serif;
-    font-weight: 600;
-    font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.48px;
+}
 
-    font-size: 24px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 4.48px;
-  }
+.image_nichiji{
+  padding-left:15%;
+  /*width: 209px;
+  height: 83.213px;*/
+  width: 14vw;
+  height: auto;
+}
 
-  .image_nichiji{
-    padding-left:15%;
-    /*width: 209px;
-    height: 83.213px;*/
-    width: 14vw;
-    height: auto;
-  }
+.image_loupe{
+  margin-top: -85px;
+  padding-left:32%;
+  width: 32px;
+  display:flex;
+}
 
-  .image_loupe{
-    margin-top: -85px;
-    padding-left:32%;
-    width: 32px;
-    display:flex;
-  }
+.venue_name {
+  margin-top: -32px;
+  padding-left: 35%;
+  font-size: 20px;
+  line-height: 150%; /* 36px */
+  letter-spacing: 3.36px;
+  display:flex;
+  color: #DDDDDD;
 
-  .venue_name {
-    margin-top: -32px;
-    padding-left: 35%;
-    font-size: 20px;
-    line-height: 150%; /* 36px */
-    letter-spacing: 3.36px;
-    display:flex;
-    color: #DDDDDD;
-    
-    font-family: dnp-shuei-mincho-pr6n, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .venue_address {
-    color: var(--gray, #BABABA);
-    margin-top: -15px;
-    padding-left: 35%;
-    font-size: 14px;
-    line-height: 150%; /* 24px */
-    letter-spacing: 2.24px;
+.venue_address {
+  color: var(--gray, #BABABA);
+  margin-top: -15px;
+  padding-left: 35%;
+  font-size: 14px;
+  line-height: 150%; /* 24px */
+  letter-spacing: 2.24px;
 
-    font-family: dnp-shuei-mincho-pr6n, sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: dnp-shuei-mincho-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .black_blank{
-    margin-top: -40px;
-    width: 100%;
-    height: 500px;
-    background: var(--black, #000000);
+  margin-top: -40px;
+  width: 100%;
+  height: 500px;
+  background: var(--black, #000000);
 }
 
 
@@ -405,127 +405,157 @@ dotlottie-player {
   position: relative;
   width: 535px;
   margin-left: 10%;
-  margin-top: -700px;
-text-align: center;
-font-family: Orbitron;
-font-size: 96px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-z-index: 10;
-  }
+  margin-top: -500px;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  z-index: 10;
+}
 
-  .project_jp{
-position: relative;
-margin-left: 10%;
-font-family: Avenir;
-font-size: 24px;
-font-style: normal;
-font-weight: 900;
-line-height: 150%; /* 48px */
-letter-spacing: 4.48px;
-margin-bottom: -700px;
-z-index: 10;
-text-align: left;
-  }
+.project_jp{
+  position: relative;
+  margin-left: 10%;
+  font-family: Avenir, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; /* 48px */
+  letter-spacing: 4.48px;
+  margin-bottom: -820px;
+  z-index: 10;
+  text-align: left;
+}
 
-  #main-image-desktop {
-    margin-top: 250px;
-    margin-left: -50px;
-      position: relative;
-      opacity: 1;
-      /*transition: opacity 0.1s linear;*/
-      width: auto;
-      height: 1200px;
-      overflow: hidden;
-      z-index: 1;
-      object-fit: cover;
-      background-color: #000;
-  }
+#main-image-desktop {
+  margin-top: 250px;
+  margin-left: -50px;
+  position: relative;
+  opacity: 1;
+  /*transition: opacity 0.1s linear;*/
+  width: auto;
+  height: 1200px;
+  overflow: hidden;
+  z-index: 1;
+  object-fit: cover;
+  background-color: #000;
+}
   
-  #main-image-mobile {
-    display: none;
-  }
-  #project_pic {
-      margin-left: 800px;
-      margin-top: -800px;
-      position: absolute;
-      opacity: 0;
-      width: 600px;
-      height: 600px;
-      overflow: hidden;
-      z-index: 3;
-      object-fit: cover;
-  }
-    
-  #covering-container{
-    /*background-color: aqua;*/
-    margin-top: -1500px;
-    position:absolute;
+#main-image-mobile {
+  display: none;
+}
+
+#project_pic {
+    margin-left: 800px;
+    margin-top: -800px;
+    position: absolute;
+    opacity: 0;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
-    z-index: 5;
-    height: 1440px;
-    width: 1440px;
-    }
+    z-index: 3;
+    object-fit: cover;
+}
     
-  #covering{
-      position:absolute;
-      overflow: hidden;
-      top: 250px;
-      left: 300px;
-      z-index: 2;
+#covering-container{
+  /*background-color: aqua;*/
+  margin-top: -1500px;
+  position:absolute;
+  overflow: hidden;
+  z-index: 5;
+  height: 1440px;
+  width: 1440px;
+}
+    
+#covering{
+  position:absolute;
+  overflow: hidden;
+  top: 250px;
+  left: 300px;
+  z-index: 2;
 }
 
 
-  #project-title{
-      position: relative;
-      margin-top: -500px;
-      margin-left: 10%;
-      font-size: 32px;
-      color: white;
-      z-index: 10;
-      text-align: left;
-  }
+#project-title{
+  font-family: Avenir, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
 
-  #project-description {
-      position: relative;
-      margin-top: 20px;
-      font-size: 16px;
-      width: 600px;
-      color: white;
-      margin-left:10%;
-      z-index: 10;
-      text-align: left;
-  }
+  position: relative;
+  margin-top: -440px;
+  margin-left: 10%;
+  font-size: 32px;
+  color: white;
+  z-index: 10;
+  text-align: left;
+}
 
-  .refbuttons{
-      position: relative;
-      display: flex;
-      transform: translate(10%,50px);
-      z-index: 10;
-      text-align: left;
-  }
+#project-description {
+  position: relative;
+  margin-top: 20px;
+  font-size: 16px;
+  height: 60px;
+  width: 600px;
+  color: white;
+  margin-left:10%;
+  z-index: 10;
+  text-align: left;
+}
 
-  .refbutton{
-      position: relative;
-      color: var(--gray, #BABABA);
-      font-family: Avenir;
-      font-size: 16px;
-      font-weight: 400;
-      background-color: transparent;
-      border: 2px solid transparent;
-      z-index: 10;
-  }
+.refbuttons{
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
 
-  .refbutton:hover{
-      position: relative;
-      color: white;
-      text-decoration: underline;
-  }
+  position: relative;
+  display: flex;
+  transform: translate(10%,50px);
+  z-index: 10;
+  text-align: left;
+}
 
-  .buttons{
-    display:none;
-  }
+.refbutton{
+  position: relative;
+  color: var(--gray, #BABABA);
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid transparent;
+  z-index: 10;
+}
+
+.refbutton:hover{
+  font-weight: 600;
+  text-shadow: 0px 0px 24px rgba(255, 255, 255, 10);
+}
+
+.refbutton {
+  position: relative;
+  color: var(--gray, #BABABA);
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.24px;
+
+  background-color: transparent;
+  border: 2px solid transparent;
+  z-index: 10;
+  padding-bottom: 5px; /* 線との間隔調整 */
+}
+
+.refbutton.selected {
+  color: white;
+  font-weight: 600;
+}
+
+.buttons{
+  display:none;
+}
 
 /*--------------------------------------------------------------- labo --------------------------------------------------------------------*/
 
@@ -547,57 +577,56 @@ text-align: left;
 }
 
 .labo_en{
-position: relative;
-width: 535px;
-margin-top: -500px;
-margin-left: 10%;
-font-family: Orbitron;
-font-size: 96px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-z-index: 10;
-text-align: left;
+  position: relative;
+  width: 535px;
+  margin-top: -500px;
+  margin-left: 10%;
+  font-family: Orbitron;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  z-index: 10;
+  text-align: left;
 }
 
 .labo_jp{
-position: relative;
-margin-left: 10%;
-font-family: Avenir;
-font-size: 24px;
-font-style: normal;
-font-weight: 900;
-line-height: 150%; 
-letter-spacing: 4.48px;
-margin-bottom: -700px;
-z-index: 10;
-text-align: left;
+  position: relative;
+  margin-left: 10%;
+  font-family: Avenir;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; 
+  letter-spacing: 4.48px;
+  margin-bottom: -700px;
+  z-index: 10;
+  text-align: left;
 }
 
-
 #main-image2 {
-margin-left: -200px;
-margin-top: -350px;
-position: relative;
-opacity: 1;
-width: 1400;
-height: auto;
-overflow: hidden;
-z-index: 3;
-object-fit: cover;
-background-color: #000;
+  margin-left: -200px;
+  margin-top: -350px;
+  position: relative;
+  opacity: 1;
+  width: 1400;
+  height: auto;
+  overflow: hidden;
+  z-index: 3;
+  object-fit: cover;
+  background-color: #000;
 }
 
 #labo_pic {
-position: relative;
-margin-left: 850px;
-transform: translate(0px,-1250px);
-opacity: 0;
-width: 465px;
-height: 465px;
-overflow: hidden;
-z-index: 3;
-object-fit: cover;
+  position: relative;
+  margin-left: 850px;
+  transform: translate(0px,-1250px);
+  opacity: 0;
+  width: 465px;
+  height: 465px;
+  overflow: hidden;
+  z-index: 3;
+  object-fit: cover;
 }
 
 #covering2-container{
@@ -608,38 +637,38 @@ object-fit: cover;
   z-index: 5;
   height: 1440px;
   width: 1440px;
-  }
+}
 
  
       
 #covering2{
-      position:absolute;
-      overflow: hidden;
-      left: 300px;
-      margin-top: -150px;
-      z-index: 5;
-      }
+  position:absolute;
+  overflow: hidden;
+  left: 300px;
+  margin-top: -150px;
+  z-index: 5;
+}
       
 
 #labo-title{
-position: relative;
-margin-top: -870px;
-margin-left: 10%;
-font-size: 32px;
-color: white;
-z-index: 10;
-text-align: left;
+  position: relative;
+  margin-top: -870px;
+  margin-left: 10%;
+  font-size: 32px;
+  color: white;
+  z-index: 10;
+  text-align: left;
 }
 
 #labo-description {
-position: relative;
-margin-top: 20px;
-font-size: 16px;
-width: 600px;
-color: white;
-margin-left:10%;
-z-index: 10;
-text-align: left;
+  position: relative;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 600px;
+  color: white;
+  margin-left:10%;
+  z-index: 10;
+  text-align: left;
 }
 
 .work {
@@ -681,26 +710,26 @@ text-align: left;
 /* 作品タイトル */
 .work-title {
   color: var(--white, #FFF);
-font-family: Avenir;
-font-size: 16px;
-font-style: normal;
-font-weight: 350;
-line-height: 150%; /* 24px */
-letter-spacing: 2.24px;
-padding: 0px;
-white-space: normal;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 150%; /* 24px */
+  letter-spacing: 2.24px;
+  padding: 0px;
+  white-space: normal;
 }
 
 /* ハッシュタグ */
 .work-tags {
   margin-top: 0px;
   color: var(--white, #FFF);
-font-family: Avenir;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 120%; /* 21px */
-letter-spacing: 0.6px;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21px */
+  letter-spacing: 0.6px;
 }
 
 .line1 {
@@ -710,9 +739,9 @@ letter-spacing: 0.6px;
   background: none;
   overflow: hidden;
   margin-bottom: 24px;
-align-items: center;
-position: relative;
-z-index: 10;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .line2 {
@@ -721,7 +750,7 @@ z-index: 10;
   background: none;
   overflow: hidden;
   margin-bottom: 24px;
-align-items: center;
+  align-items: center;
 }
 
 .line3 {
@@ -730,7 +759,7 @@ align-items: center;
   background: none;
   overflow: hidden;
   margin-bottom: 24px;
-align-items: center;
+  align-items: center;
 }
 
 @keyframes loop_animation_right_double {
@@ -768,29 +797,29 @@ align-items: center;
 
 
 .refbuttons2-1{
-position: relative;
-display: flex;
-margin-top: 150px;
-z-index: 10;
-justify-content: center;
+  position: relative;
+  display: flex;
+  margin-top: 150px;
+  z-index: 10;
+  justify-content: center;
 }
 
 .refbuttons2-2{
-position: relative;
-display: flex;
-margin-top: 20px;
-z-index: 10;
-justify-content: center;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  z-index: 10;
+  justify-content: center;
 }
 
 .refbutton2{
-position: relative;
-color: var(--gray, #BABABA);
-font-family: Avenir;
-font-size: 16px;
-background-color: transparent;
-border: transparent;
-z-index: 10;
+  position: relative;
+  color: var(--gray, #BABABA);
+  font-family: Avenir;
+  font-size: 16px;
+  background-color: transparent;
+  border: transparent;
+  z-index: 10;
 }
 
 /* ------------------------------------開催概要・地図------------------------------------------*/
@@ -805,12 +834,12 @@ z-index: 10;
   position: relative; /* 親要素内に配置 */
   margin-left: 93px;
   width: 85%;
-height: 414px;
-border-radius: 40px;
-border: 2px solid var(--white, #FFF);
-background: var(--black, #000000);
-align-items: center;
-transform: translate(0px, 320px);
+  height: 414px;
+  border-radius: 40px;
+  border: 2px solid var(--white, #FFF);
+  background: var(--black, #000000);
+  align-items: center;
+  transform: translate(0px, 320px);
 }
 
 .kaisai_detail  {
@@ -837,12 +866,13 @@ transform: translate(0px, 320px);
   line-height: 150%; /* 36px */
   letter-spacing: 3.36px;
 }
+
 .contents4.container {
-display: flex;
-justify-content: center; /* 水平方向に中央揃え */
-align-items: center; /* 垂直方向に中央揃え */
-height: 100vh; /* ビューポート全体の高さ */
-width: 100vw; /* ビューポート全体の幅 */
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  height: 100vh; /* ビューポート全体の高さ */
+  width: 100vw; /* ビューポート全体の幅 */
 }
 
 #googlemapbox {
@@ -869,17 +899,17 @@ width: 100vw; /* ビューポート全体の幅 */
   width: 32px;
   display:flex;
   flex-direction: column; /* アイテムを縦に並べる */
-gap: 36px; /* アイテム間の隙間 */
+  gap: 36px; /* アイテム間の隙間 */
 }
 
 .about_venue{
   margin-top:-184px;
   padding-left:44px;
   font-family: Avenir;
-font-size: 20px;
-font-weight: 400;
-line-height: 150%; /* 30px */
-letter-spacing: 2.8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 2.8px;
 }
 
 .venue_address2 {
@@ -902,6 +932,7 @@ letter-spacing: 2.8px;
   margin-top: -50px;
   height: 960px;
 }
+
 .exhibition_title {
   padding-top: 377px;
   font-size: 32px;
@@ -944,9 +975,11 @@ letter-spacing: 2.8px;
   /*background-color: #ffffff;*/
   padding: 0;
 }
+
 .tail{
   width: 100%;
 }
+
 .tail img{
   width: 100%;
   height: auto;
@@ -957,72 +990,74 @@ letter-spacing: 2.8px;
   text-align: center;
   color :black;
 }
+
 .sponsor_title {
   padding-top:150px;
   font-family: "futura-pt", sans-serif;
-font-size: 40px;
-font-weight: 450;
-letter-spacing: 1.6px;
+  font-size: 40px;
+  font-weight: 450;
+  letter-spacing: 1.6px;
 }
 .sponsor_title_jp {
   font-family: Avenir;
-font-size: 24px;
-font-weight: 400;
-line-height: 150%; /* 36px */
-letter-spacing: 3.36px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  letter-spacing: 3.36px;
 }
 .sponsor_name{
   color: #757575;
-font-family: Avenir;
-font-size: 20px;
-font-weight: 400;
-line-height: 150%; /* 30px */
-letter-spacing: 2.8px;
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 2.8px;
 }
 
 .sponsor_logo{
-margin-top: -600px;
-max-width:100vw;
-z-index: -1;
-position: relative; /* 必須 */
+  margin-top: -600px;
+  max-width:100vw;
+  z-index: -1;
+  position: relative; /* 必須 */
 }
 
 .sponsor_logo img {
-margin-top: -100px;
-max-width: 100vw;
+  margin-top: -100px;
+  max-width: 100vw;
 }
+
 .kojin_sponsor {
-color :black;
-font-family: Avenir;
-font-size: 20px;
-font-weight: 400;
-line-height: 150%; /* 30px */
-letter-spacing: 2.8px;
-padding-bottom: 80px;
-margin-top: -120px;
+  color :black;
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 2.8px;
+  padding-bottom: 80px;
+  margin-top: -120px;
 }
 
 .kuroobi{
-/*margin-top: 0px;*/
-width: 100%;
-height: 120px;
-background: var(--black, #000000);
-display: flex;
+  /*margin-top: 0px;*/
+  width: 100%;
+  height: 120px;
+  background: var(--black, #000000);
+  display: flex;
 }
 
 .kuroobi img{
-height: 100px;
-padding-top: 20px;
-padding-left: 33%;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 33%;
 }
 
 .event_title_tail{
-color: var(--gray, #BABABA);
-font-family: "DNP ShueiYMinStd";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 2.24px;
-padding: 45px;
+  color: var(--gray, #BABABA);
+  font-family: "DNP ShueiYMinStd";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.24px;
+  padding: 45px;
 }
