@@ -10,7 +10,7 @@ window.onload = function () {
         const scrollDown = document.querySelector(".scroll_down");
         scrollDown.style.opacity = "1";
         scrollDown.style.visibility = "visible";
-    }, 3000);
+    }, 100);
 };
 
 // スクロールイベントで `.scroll_down` を隠す
