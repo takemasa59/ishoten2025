@@ -617,7 +617,7 @@ padding-top: 0; /* 不要なpaddingは削除 */
 }
 
 #labo_pic {
-  transform: translate(0px,760px) rotate(0deg); 
+  transform: translate(0px,780px) rotate(0deg);
   position: relative;
   margin-left: 48%;
   /*opacity: 0;*/
@@ -626,6 +626,7 @@ padding-top: 0; /* 不要なpaddingは削除 */
   overflow: hidden;
   z-index: 6;
   object-fit: cover;
+  opacity: 1;
 }
 
 #labo-container {
@@ -674,6 +675,9 @@ z-index: 10;
 text-align: left;
 }
 
+.line1 {
+  margin-top: 40px;
+}
 
 .work {
   width: 308px;
@@ -754,13 +758,11 @@ color: var(--gray);
 
 
 .buttons{
-  margin-top: 30px;
-  gap: 70vw;
-  margin-left: 50%;
+  gap: 40px;
+  margin-top: 140px;
+  margin-left: 0 auto;
   position: relative;
-  background-color: transparent;
-  width: 28px;
-  height: 28px;
+
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -769,6 +771,22 @@ color: var(--gray);
   align-items: center;
   z-index: 10;
 }
+
+
+/* インデックスの表示（1/13） */
+#counter {
+  width: max-content;
+
+  color: var(--gray, #BABABA);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: 1.68px;
+}
+
 
 .labo-button{
   position: relative;
@@ -807,27 +825,27 @@ display: none;
 }
 
 #covering2-container{
-/*background-color: aqua;*/
-top: -32%;
-left: -50%;
-transform: translate(0%,-0%);
-margin-top: 300px;
-transform:rotate(-40deg);
-position:absolute;
-overflow: hidden;
-z-index: 5;
-height: 1000px;
-width: 1000px;
+  /*background-color: aqua;*/
+  top: -32%;
+  left: -50%;
+  transform: translate(0%,-0%);
+  margin-top: 300px;
+  transform:rotate(-40deg);
+  position:absolute;
+  overflow: hidden;
+  z-index: 5;
+  height: 1000px;
+  width: 1000px;
 }
 
 #covering2{
-height: 440px;
-width:440px;
-position:relative;
-overflow: hidden;
-margin-top: 100px;
-margin-left: 50px;
-z-index: 5;
+  height: 440px;
+  width:440px;
+  position:relative;
+  overflow: hidden;
+  margin-top: 140px;
+  margin-left: 220px;
+  z-index: 5;
 }
 
 /* ------------------------------------開催情報------------------------------------------*/

@@ -19,12 +19,20 @@
       [
         { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
         { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
-        { src: "images/モビリティ/中村.webp", title: "墨田区文花団地の移動の自由度を広げるパーソナルモビリティの提案", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
+        { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
         { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
         { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
-        { src: "images/モビリティ/中村.webp", title: "墨田区文花団地の移動の自由度を広げるパーソナルモビリティの提案", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
+        { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
+        { src: "images/モビリティ/赤坂.webp", title: "自転車の交通ルール改善に向けた注意喚起デバイス", description: "#自転車は原則歩道右側を通行すべし #うるさい" },
+        { src: "images/モビリティ/細川.webp", title: "車内空間の情報との距離感のコントロールを可能にする自動車インテリアのCMF提案", description: "#ヒートガン #レジン #ボコボコ" },
+        { src: "images/モビリティ/中村.webp", title: "文花団地の課題を解決するモビリティ", description: "#墨田区 #ご当地モビリティ #特例特定小型原付" },
       ],
       [
+        { src: "images/コマーシャル/早坂.webp", title: "理系就活の可能性を広げる「営業ボードゲーム」の制作", description: "#ボードゲーム #営業 #コンサル" },
+        { src: "images/コマーシャル/杉.webp", title: "子供の自己肯定感向上を図る子供に作ってもらうオリジナル絵本", description: "#オリジナル絵本 #子供" },
+        { src: "images/コマーシャル/畠山.webp", title: "SNSを利用して15年前に流行したキャラクターのリブートを試みる", description: "#豆しば #アニメーション" },
+        { src: "images/コマーシャル/松藤.webp", title: "訪日外国人の購買意欲を促進する土産菓子パッケージの提案ー小江戸川越を舞台にー", description: "#インバウンド消費 #地域経済活性化" },
+        { src: "images/コマーシャル/杉山RGB.webp", title: "形状、重さの観点から抱き心地を追求した、使用者に安心感を与える抱き具の制作", description: "#安心感 #包み込まれる #重さと形" },
         { src: "images/コマーシャル/早坂.webp", title: "理系就活の可能性を広げる「営業ボードゲーム」の制作", description: "#ボードゲーム #営業 #コンサル" },
         { src: "images/コマーシャル/杉.webp", title: "子供の自己肯定感向上を図る子供に作ってもらうオリジナル絵本", description: "#オリジナル絵本 #子供" },
         { src: "images/コマーシャル/畠山.webp", title: "SNSを利用して15年前に流行したキャラクターのリブートを試みる", description: "#豆しば #アニメーション" },
@@ -34,12 +42,23 @@
       [
       { src: "images/コミュ/渡辺.webp", title: "植物の造形美を表現した花の種のパッケージの制作", description: "#パターン #パッケージ #植物 #造形" },
       { src: "images/コミュ/真田.webp", title: "スマートフォンを用いたカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現" },
-      { src: "images/コミュ/森永.webp", title: "レトロな印象を与えるカタカナフォントの制作", description: "#レトロ #フォント" },
+      { src: "images/コミュ/森永.webp", title: "レトロな印象を与えるカタカナフォントの制作", description: "レトロ #フォント" },
       { src: "images/コミュ/北村.webp", title: "ストーリーテリングを活かしたサブスクサービスにおけるアイキャッチデザインの提案", description: "#ストーリーテリング #アイキャッチ" },
-      { src: "images/コミュ/森.webp", title: "光の性質により自然発生する模様を用いた立体ポスターの制作", description: "＃光＃アクリル＃組み合わせで無数のパターン"},
+      { src: "images/コミュ/真田.webp", title: "スマートフォンを用いた\nカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現"},
+      { src: "images/公園プロジェクト/砂川.webp", title: "利用者の優しさを引き出すサインの提案〜隅田公園において〜", description: "#公園 #サインデザイン #挨拶 #いきもの感 #鏡" },
+      { src: "images/コミュ/渡辺.webp", title: "植物の造形美を表現した花の種のパッケージの制作", description: "#パターン #パッケージ #植物 #造形" },
+      { src: "images/コミュ/真田.webp", title: "スマートフォンを用いたカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現" },
+      { src: "images/コミュ/森永.webp", title: "レトロな印象を与えるカタカナフォントの制作", description: "レトロ #フォント" },
+      { src: "images/コミュ/北村.webp", title: "ストーリーテリングを活かしたサブスクサービスにおけるアイキャッチデザインの提案", description: "#ストーリーテリング #アイキャッチ" },
+      { src: "images/コミュ/真田.webp", title: "スマートフォンを用いた\nカラオケでのコミュニケーション手法の提案", description: "#スマホペンライト #ライブ感 #自己表現"},
       { src: "images/公園プロジェクト/砂川.webp", title: "利用者の優しさを引き出すサインの提案〜隅田公園において〜", description: "#公園 #サインデザイン #挨拶 #いきもの感 #鏡" },
   ],
   [
+    { src: "images/コンテク/桝田.webp", title: "煙霧体を操作するインタラクティブ体験装置の提案", description: "#煙 #霧 #インタラクション" },
+    { src: "images/コンテク/佐久間.webp", title: "視覚障害者のための屋内空間における新しい案内手法の提案", description: "#視覚障害者 #空間イメージ #対等" },
+    { src: "images/コンテク/錦織.webp", title: "野菜摂取量概算アプリケーションとその活用の提案", description: "#野菜 #栄養素 #食事管理" },
+    { src: "images/コンテク/尾原.webp", title: "初対面の相手に認識してもらうための自己紹介の手法", description: "#自己紹介 #友達作り" },
+    { src: "images/コンテク/白根.webp", title: "並置混色を楽しみながら理解する表現方法の探求", description: "#並置混色 #知覚心理" },
     { src: "images/コンテク/桝田.webp", title: "煙霧体を操作するインタラクティブ体験装置の提案", description: "#煙 #霧 #インタラクション" },
     { src: "images/コンテク/佐久間.webp", title: "視覚障害者のための屋内空間における新しい案内手法の提案", description: "#視覚障害者 #空間イメージ #対等" },
     { src: "images/コンテク/錦織.webp", title: "野菜摂取量概算アプリケーションとその活用の提案", description: "#野菜 #栄養素 #食事管理" },
@@ -95,7 +114,13 @@
     { src: "images/デザイン文化計画/南.webp", title: "墨田区における生活者による資源発見・資源活用型のデザインワークショップの実践", description: "#墨田区 #ワークショップ #地域資源 #KJ法" },
     { src: "images/デザイン文化計画/岩下.webp", title: "鋸南町にある空き家を活用した地域の人々の関わりの促進", description: "#自然の中でご飯とおはなし #地元の人が改修した空き家" },
     { src: "images/デザイン文化計画/仁木.webp", title: "墨田区における水害対策用品「避難の緊急度によって形を変化させる防災バッグ」", description: "#水害対策 #防災バッグ #食料棚" },
-    { src: "images/デザイン文化計画/田村.webp", title: "歴史的造形物の3Dデータ取得・保存と活用", description: "#3D #歴史的造形物 #埴輪 #ハニワ #はにわ" },
+    { src: "images/デザイン文化計画/田村.webp", title: "歴史的造形物の3Dデータ取得・保存と活用", description: "3D #歴史的造形物 #埴輪 #ハニワ #はにわ" },
+    { src: "images/デザイン文化計画/細田.webp", title: "万祝の型紙図案のデジタルデータの取得・活用に基づく新たな表現方法の模索とグッズの提案", description: "#千葉県 #漁師の着物 #デジタルデータの取得と活用" },
+    { src: "images/デザイン文化計画/栗田.webp", title: "南房総市千倉町における白間津のオオマチの持続可能なあり方", description: "#祭りバカ #地域の絆 #みんなで楽しむハレの日" },
+    { src: "images/デザイン文化計画/南.webp", title: "墨田区における生活者による資源発見・資源活用型のデザインワークショップの実践", description: "#墨田区 #ワークショップ #地域資源 #KJ法" },
+    { src: "images/デザイン文化計画/岩下.webp", title: "鋸南町にある空き家を活用した地域の人々の関わりの促進", description: "#自然の中でご飯とおはなし #地元の人が改修した空き家" },
+    { src: "images/デザイン文化計画/仁木.webp", title: "墨田区における水害対策用品「避難の緊急度によって形を変化させる防災バッグ」", description: "#水害対策 #防災バッグ #食料棚" },
+    { src: "images/デザイン文化計画/田村.webp", title: "歴史的造形物の3Dデータ取得・保存と活用", description: "3D #歴史的造形物 #埴輪 #ハニワ #はにわ" },
     { src: "images/デザイン文化計画/細田.webp", title: "万祝の型紙図案のデジタルデータの取得・活用に基づく新たな表現方法の模索とグッズの提案", description: "#千葉県 #漁師の着物 #デジタルデータの取得と活用" },
   ],
   [
@@ -116,7 +141,7 @@
         { src: "images/共創環境/稲垣.webp", title: "香りを用いて手間を楽しみ「書く」による発散を促すプロダクトの提案", description: "#書く #手間を楽しむ#香り" },
         { src: "images/公園プロジェクト/松信.webp", title: "隅田公園における足跡を利用したサインデザインの提案", description: "#公園 #あしあと #サインデザイン" },
         { src: "images/産業環境/赤司.webp", title: "墨田区のものづくりの過程を可視化し認知拡大を図る", description: "#端材 #標本化 #エポキシ樹脂" },
-        { src: "images/産業環境/橋本.webp", title: "墨田区のものづくりの過程を可視化し認知拡大を図る", description: "#ランディングページ #情報設計 #LP #TP" },
+        { src: "images/産業環境/橋本.web", title: "墨田区のものづくりの過程を可視化し認知拡大を図る", description: "#ランディングページ #情報設計 #LP #TP" },
         { src: "images/商店街/坂本.webp", title: "商店街の魅力発信とファン獲得を目指した謎解き街歩きの提案", description: "#謎解き街歩き #気付けばあなたもあづまテラスファン" },
         { src: "images/商店街/清水.webp", title: "夜のあづまテラスにおいて人の気配を感じられる照明の提案", description: "#夜のあづまテラスに着目 #照明" },
         { src: "images/商店街/藤崎.webp", title: "商店街に新たな居場所を創出し、地域の顔となる拠点の提案", description: "#拠点 #休憩スペース" },
@@ -211,21 +236,49 @@
       });
   });
   
+
+  const buttons = document.querySelectorAll('.refbutton2'); // ボタンリスト
+  const counter = document.getElementById("counter"); // 1/13 を表示する要素
+  
+  // ボタンのクリック時の動作をまとめた関数
+  function updateSelection() {
+      // すべてのボタンから selected クラスを削除
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      
+      // 現在のボタンに selected クラスを追加
+      buttons[currentIndex].classList.add('selected');
+  
+      // 「1/13」の表示を更新（currentIndex は 0 から始まるので +1 する）
+      counter.textContent = `${currentIndex + 1}/${buttons.length}`;
+  }
+  
+  // ボタンのクリックイベント
   document.getElementById("next-button2").addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images2.length;
+      // 次のボタンへ進む
+      if (currentIndex === buttons.length - 1) {
+          currentIndex = 0; // 最初のボタンへ
+      } else {
+          currentIndex++;
+      }
+      updateSelection(); // 表示を更新
       updateImageAndDescription();
       updateWorks();
   });
   
   document.getElementById("prev-button2").addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images2.length;
+      // 前のボタンへ戻る
+      if (currentIndex === 0) {
+          currentIndex = buttons.length - 1; // 最後のボタンへ
+      } else {
+          currentIndex--;
+      }
+      updateSelection(); // 表示を更新
       updateImageAndDescription();
       updateWorks();
   });
-  
 
     // ボタン全てにクラス refbutton がついている場合
-    const buttons = document.querySelectorAll('.refbutton2');
+     //const buttons = document.querySelectorAll('.refbutton2');
     buttons[0].classList.add('selected');
 
     buttons.forEach((button, i) => {
@@ -240,6 +293,7 @@
             // クリックされたボタンに.selectedを追加
             button.classList.add('selected');
         });
+        updateImageAndDescription();
     });
   
   window.addEventListener("load", updateImageAndDescription);

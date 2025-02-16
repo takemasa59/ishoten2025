@@ -230,21 +230,49 @@
         });
     });
     
+
+    const buttons = document.querySelectorAll('.refbutton2'); // ボタンリスト
+    const counter = document.getElementById("counter"); // 1/13 を表示する要素
+    
+    // ボタンのクリック時の動作をまとめた関数
+    function updateSelection() {
+        // すべてのボタンから selected クラスを削除
+        buttons.forEach(btn => btn.classList.remove('selected'));
+        
+        // 現在のボタンに selected クラスを追加
+        buttons[currentIndex].classList.add('selected');
+    
+        // 「1/13」の表示を更新（currentIndex は 0 から始まるので +1 する）
+        counter.textContent = `${currentIndex + 1}/${buttons.length}`;
+    }
+    
+    // ボタンのクリックイベント
     document.getElementById("next-button2").addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % images2.length;
+        // 次のボタンへ進む
+        if (currentIndex === buttons.length - 1) {
+            currentIndex = 0; // 最初のボタンへ
+        } else {
+            currentIndex++;
+        }
+        updateSelection(); // 表示を更新
         updateImageAndDescription();
         updateWorks();
     });
     
     document.getElementById("prev-button2").addEventListener("click", () => {
-        currentIndex = (currentIndex - 1) % images2.length;
+        // 前のボタンへ戻る
+        if (currentIndex === 0) {
+            currentIndex = buttons.length - 1; // 最後のボタンへ
+        } else {
+            currentIndex--;
+        }
+        updateSelection(); // 表示を更新
         updateImageAndDescription();
         updateWorks();
     });
-    
   
       // ボタン全てにクラス refbutton がついている場合
-      const buttons = document.querySelectorAll('.refbutton2');
+       //const buttons = document.querySelectorAll('.refbutton2');
       buttons[0].classList.add('selected');
   
       buttons.forEach((button, i) => {
@@ -259,6 +287,7 @@
               // クリックされたボタンに.selectedを追加
               button.classList.add('selected');
           });
+          updateImageAndDescription();
       });
     
     window.addEventListener("load", updateImageAndDescription);
