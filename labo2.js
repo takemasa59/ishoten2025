@@ -51,10 +51,7 @@
     { src: "images/意匠/野畠.webp", title: "旅するテーブル-食事を通じて人と人とを繋ぐ移動式テーブル-", description: "#縁食 #一期一会 #食の力" },
     { src: "images/意匠/中島.webp", title: "着用者の表情変化を相手に隠さない仮面の制作", description: "#仮面 #表情" },
     { src: "images/意匠/小松野.webp", title: "吹き付け和紙と発泡スチロールを用いた中空かつ開口部のない一枚から成る紙の立体成形", description: "#紙 #立体成形 #紙漉き" },
-    { src: "images/意匠/阿部.webp", title: "風景の領域をレイアウトに取り入れた漫画の制作-漫画『虚実の境界』を描いて-", description: "#漫画 #虚実 #境界線 #混乱" },
-    { src: "images/意匠/野畠.webp", title: "旅するテーブル-食事を通じて人と人とを繋ぐ移動式テーブル-", description: "#縁食 #一期一会 #食の力" },
-    { src: "images/意匠/中島.webp", title: "着用者の表情変化を相手に隠さない仮面の制作", description: "#仮面 #表情" },
-    { src: "images/意匠/小松野.webp", title: "吹き付け和紙と発泡スチロールを用いた中空かつ開口部のない一枚から成る紙の立体成形", description: "#紙 #立体成形 #紙漉き" },
+    {src:"images/意匠/成田.webp", title:"キュートアグレッションの魅力を人とを共有する表現方法",description:"#かわいい　#ぬいぐるみ　＃キュートアグレッション"}
   ],
   [
     { src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
