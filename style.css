@@ -453,7 +453,7 @@ dotlottie-player {
     width: 600px;
     height: 600px;
     overflow: hidden;
-    z-index: 3;
+    z-index: 6;
     object-fit: cover;
 }
     
@@ -639,7 +639,7 @@ background-color: #000;
   width: 465px;
   height: 465px;
   overflow: hidden;
-  z-index: 3;
+  z-index: 6;
   object-fit: cover;
 }
 

@@ -152,19 +152,19 @@
   let fadeIn;
   
   function updateImageAndDescription() {
-      const mainImage = document.getElementById("main-image2");
-      const projectPic = document.getElementById("labo_pic");
+      const mainImage2 = document.getElementById("main-image2");
+      const laboPic = document.getElementById("labo_pic");
       const imageIcon = document.getElementById("labo-icon");
       const imageTitle = document.getElementById("labo-title");
       const imageDescription = document.getElementById("labo-description");
       const covering2 = document.getElementById("covering2");
   
       if (fadeIn) clearInterval(fadeIn);
-      mainImage.style.opacity = 0;
+      mainImage2.style.opacity = 0;
       let size = 100;
       let opacity = 0;
   
-      projectPic.src = images2[currentIndex].src;
+      laboPic.src = images2[currentIndex].src;
       imageIcon.src = images2[currentIndex].icon;
       imageTitle.textContent = images2[currentIndex].title;
       imageDescription.textContent = images2[currentIndex].description;
@@ -173,8 +173,8 @@
           size += 40;
           opacity += 0.05;
           covering2.style.transform = `scale(${1 + size / 500})`;
-          mainImage.style.opacity = opacity;
-          projectPic.style.opacity = opacity;
+          mainImage2.style.opacity = opacity;
+          laboPic.style.opacity = opacity;
           if (size >= 4500) clearInterval(fadeIn);
       }, 50);
   }

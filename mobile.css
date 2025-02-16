@@ -414,10 +414,9 @@ dotlottie-player {
   height: 1100px; /* 高さを指定 */
   width: auto; /* 横幅を自動設定（画像のサイズに合わせる） */
   position: absolute; /* 絶対位置 */
-  top: 0; /* 画面上端に設定 */
-  left: -85%; /* 画面の中央に設定 */
-  margin-top: -30%;
-  /*transform: translateX(-60%) translateY(-24%); /* 水平方向中央、垂直方向で移動なし */
+  top: 50%; /* 画面の中央に設定 */
+  left: 50%; /* 画面の中央に設定 */
+  transform: translateX(-60%) translateY(-55%); /* 水平・垂直方向の中央に配置 */
   
   opacity: 1;
   overflow: hidden;
@@ -426,7 +425,6 @@ dotlottie-player {
 }
 
 #project_pic {
-  /*transform: translateY(0%) translateX(-50%);*/
   margin-left: 0%;
   margin-top: 0px;
 
@@ -454,8 +452,7 @@ dotlottie-player {
   position:absolute;
   overflow: hidden;
   top: -230px;
-  margin-left: -800px;
-  
+  margin-left: -850px;
   z-index: 2;
 }
 
@@ -604,33 +601,36 @@ text-align: left;
 }
 
 #main-image2 {
-transform: rotate(-40deg); 
-margin-left: -45%;
-margin-top: 450px;
-position: e;
+transform: translate(-25%,0%) rotate(-40deg); 
+margin-top: 500px;
+left: 50%;
+position: absolute;
 opacity: 1;
 width: auto;
 height: 844px;
 overflow: hidden;
 z-index: 3;
 object-fit: cover;
+display: block;
+padding-top: 0; /* 不要なpaddingは削除 */
+
 }
 
 #labo_pic {
-  transform: translate(0px,-600px) rotate(0deg); 
+  transform: translate(0px,760px) rotate(0deg); 
   position: relative;
-  margin-left: 55%;
+  margin-left: 48%;
   /*opacity: 0;*/
   width: 200px;
   height: 200px;
   overflow: hidden;
-  z-index: 3;
+  z-index: 6;
   object-fit: cover;
 }
 
 #labo-container {
   display: flex;
-  margin-top: -780px; /* 310pxの間隔を追加 */
+  margin-top: 550px; /* 310pxの間隔を追加 */
   margin-left: 10%;
   z-index: 10;
 
@@ -668,7 +668,7 @@ height: 164px;
 position: relative;
 margin-top: 20px;
 font-size: 12px;
-width: 160px;
+width: 35%;
 margin-left:10%;
 z-index: 10;
 text-align: left;
@@ -808,21 +808,25 @@ display: none;
 
 #covering2-container{
 /*background-color: aqua;*/
-margin-top: -1000px;
+top: -32%;
+left: -50%;
+transform: translate(0%,-0%);
+margin-top: 300px;
 transform:rotate(-40deg);
 position:absolute;
 overflow: hidden;
 z-index: 5;
 height: 1000px;
-width: 844px;
+width: 1000px;
 }
 
 #covering2{
-height: 844px;
-width:844px;
-position:absolute;
+height: 440px;
+width:440px;
+position:relative;
 overflow: hidden;
-margin-left: -250px;
+margin-top: 100px;
+margin-left: 50px;
 z-index: 5;
 }
 
@@ -983,10 +987,6 @@ gap: 32px; /* アイテム間の隙間 */
 }
 
 /* ------------------------------------合同卒展------------------------------------------*/
-
-.sponsor{
-    /*background-color: #ffffff;*/
-}
 
 .tail{
     width: 100vw;
