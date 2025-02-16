@@ -765,6 +765,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 120%; /* 21px */
 letter-spacing: 0.6px;
+color: var(--gray);
 }
 
 .line1 {
@@ -811,7 +812,7 @@ letter-spacing: 0.6px;
 }
 
 .line1_double {
-  animation: loop_animation_right_double 36s linear infinite;
+  animation: loop_animation_right_double 24s linear infinite;
   white-space: nowrap;
   color: #FFF;
   display: flex;
