@@ -775,7 +775,7 @@ letter-spacing: 0.6px;
   overflow: hidden;
   margin-bottom: 24px;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 10;
 }
 
@@ -837,7 +837,7 @@ letter-spacing: 0.6px;
 .refbuttons2-1{
   position: relative;
   display: flex;
-  margin-top: 24px;
+  margin-top: 240px;
   z-index: 10;
   justify-content: center;
   gap: 12px;

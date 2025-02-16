@@ -77,11 +77,11 @@
   ],
   [
     { src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-    {src: "images/人間生活工学/片岡.webp", title: "tkms versons", description: "#飲酒運転 #人間工学"},
+    {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
     {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-    {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+    {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
     {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-    {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+    {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
   
   ],
   [
@@ -146,6 +146,7 @@
         { src: "images/商店街/清水.webp", title: "夜のあづまテラスにおいて人の気配を感じられる照明の提案", description: "#夜のあづまテラスに着目 #照明" },
         { src: "images/商店街/藤崎.webp", title: "商店街に新たな居場所を創出し、地域の顔となる拠点の提案", description: "#拠点 #休憩スペース" },
       ],
+      [],
   ];
 
   let currentIndex = 0;
@@ -180,6 +181,18 @@
   }
   
   function updateWorks() {
+    const workSet = works[currentIndex];
+
+  if (!workSet || workSet.length === 0) {
+    // データがない場合、すべての要素を非表示
+    [...Array(13)].forEach((_, i) => {
+      const workDiv = document.getElementById(`work${i}`);
+      const workDiv2 = document.getElementById(`work2-${i}`);
+      if (workDiv) workDiv.style.display = "none";
+      if (workDiv2) workDiv2.style.display = "none";
+    });
+    return;
+  }
       [...Array(13)].forEach((_, i) => {
         const workData = works[currentIndex][i]; // データを取得
         const workImage = document.getElementById(`work-image${i }`);

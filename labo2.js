@@ -77,11 +77,11 @@
     ],
     [
       { src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-      {src: "images/人間生活工学/片岡.webp", title: "tkms versons", description: "#飲酒運転 #人間工学"},
+      {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
       {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-      {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+      {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
       {src: "images/人間生活工学/片岡.webp", title: "飲酒と眠気がドライバーの生理反応に与える影響", description: "#飲酒運転 #人間工学"},
-      {src: "images/人間生活工学/片岡.webp", title: "tkms verson", description: "#飲酒運転 #人間工学"},
+      {src: "images/人間生活工学/tkms.webp", title: "歩容による主観的ウェルビーイングと生理反応の関係", description: "#歩行 #幸せ"},
     
     ],
     [
@@ -199,6 +199,18 @@
     
     
     function updateWorks() {
+      const workSet = works[currentIndex];
+
+      if (!workSet || workSet.length === 0) {
+        // データがない場合、すべての要素を非表示
+        [...Array(13)].forEach((_, i) => {
+          const workDiv = document.getElementById(`work${i}`);
+          const workDiv2 = document.getElementById(`work2-${i}`);
+          if (workDiv) workDiv.style.display = "none";
+          if (workDiv2) workDiv2.style.display = "none";
+        });
+        return;
+      }
         [...Array(13)].forEach((_, i) => {
           const workData = works[currentIndex][i]; // データを取得
           const workImage = document.getElementById(`work-image${i }`);
