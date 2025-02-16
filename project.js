@@ -5,7 +5,7 @@
         { src: "images/koen.png", icon: "images/project_icon/公園.svg", title: "公園プロジェクト",description: "墨田区の公園を対象に、公園というパブリックな空間をより多くの人にとっての良い居場所とすることを目指すプロジェクト。管理者側と利用者側を繋ぐ案内サインやコミュニケーションツールなどの提案を行っている。" },
         { src: "images/kyosokankyo.png", icon: "images/project_icon/共創環境.svg",　title: "共創環境プロジェクト",description: "千葉大学墨田サテライトキャンパス5Fを対象に、学生の創造的ワークを促しサポートする家具や環境のあり方を提案・考察することを目指して活動している。" },
         { src: "images/sangyokanko.png",　icon: "images/project_icon/産業観光.svg", title: "産業観光プロジェクト",description: "墨田区産業振興課と連携し、町工場の端材と事業者をサンプリングする「すみだまてりあ」を企画。端材や人のストーリーを活かしたプロダクトを制作し、墨田の産業活性化を目指す。" },
-        { src: "images/yamaha.png", icon: "images/project_icon/ヤマハ.svg", title: "ヤマハプロジェクト",description: "多様なPLAYERを生み出す体験及び道具・環境のデザイン表現」をテーマに掲げたヤマハ株式会社との共同研究。音・音楽に限らず下町を舞台に学生個人の興味を尊重した拡大解釈的アプローチで活動している。" },
+        { src: "images/yamaha.png", icon: "images/project_icon/ヤマハ.svg", title: "ヤマハプロジェクト",description: "「多様な'PLAYER'を生み出す体験及び道具・環境のデザイン表現」をテーマに掲げたヤマハ株式会社との共同研究。音・音楽に限らず下町を舞台に学生個人の興味を尊重した拡大解釈的アプローチで活動している。" },
     ];
 
     let currentIndex = 0;
