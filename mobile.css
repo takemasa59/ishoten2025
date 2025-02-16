@@ -664,16 +664,24 @@ padding-top: 0; /* 不要なpaddingは削除 */
 }
 
 
+
 #labo-description {
-height: 164px;
-position: relative;
-margin-top: 20px;
-font-size: 12px;
-width: 35%;
-margin-left:10%;
-z-index: 10;
-text-align: left;
+  font-family: Avenir;
+  font-weight: 350;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.96px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  height: 164px;
+  position: relative;
+  margin-top: 20px;
+  width: 35%;
+  margin-left:10%;
+  z-index: 10;
+  text-align: left;
 }
+  
 
 .line1 {
   margin-top: 40px;
@@ -745,7 +753,20 @@ letter-spacing: 0.5px;
 margin-left: 4px;
 margin-top:0px;
 color: var(--gray);
+}
 
+/* ハッシュタグ */
+.work-tags {
+  position: absolute;
+  height: auto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21px */
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+  margin-top:0px;
+  color: var(--gray);
 }
 
 .line1_double {
@@ -758,13 +779,14 @@ color: var(--gray);
 
 
 .buttons{
-  gap: 40px;
+  gap: 16px;
   margin-top: 140px;
   margin-left: 0 auto;
   position: relative;
 
   font-size: 16px;
   font-weight: bold;
+
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -775,8 +797,7 @@ color: var(--gray);
 
 /* インデックスの表示（1/13） */
 #counter {
-  width: max-content;
-
+  width: 80px;
   color: var(--gray, #BABABA);
   text-align: center;
   font-family: Avenir;
